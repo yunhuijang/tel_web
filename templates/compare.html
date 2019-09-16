@@ -1,0 +1,145 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<style>
+    img
+    {
+    width:100%
+    }
+</style>
+<div class = "container" >
+    <div class = "row">
+        <div class = "col">
+            <center>
+                <h2>
+                    Translucent Event Log
+                </h2>
+            </center>
+        </div>
+        <div class = "col">
+            <center>
+                <h2>
+                    Normal Event Log
+                </h2>
+            </center>
+        </div>
+    </div>
+    <div class = "row">
+            {%if result is none %}
+        <div class = "col">
+            <form action = "/compare" method = "post" enctype="multipart/form-data">
+            <div style = "width:200px; margin-bottom:20px;" >
+                afreq
+                    <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}} value = {{parameters.get('afreq_thresh')}} step = "1">
+                sfreq
+                    <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}} value = {{parameters.get('sfreq_thresh')}} step = "1">
+            </div>
+                <div >
+                    {% for key, value in option.items() %}
+                    <input type="hidden" name={{key}} value = {{value}}>
+                    {% endfor %}
+                </div>
+                <div style="padding-bottom:20px">
+                    <input class = "btn btn-outline-info" type = "submit" value = "show">
+                </div>
+
+            </form>
+        </div>
+        {% else %}
+        <div class = "col">
+        </div>
+        {% endif %}
+        <div class = "col">
+        </div>
+    </div>
+    <div class = "row" style="margin-bottom:50px">
+        <div id = "focal" class = "col">
+            <div class = "panzoom">
+                            <img src = {{img_file_path}}>
+            </div>
+            <script>
+                    (function() {
+                      var $section = $('#focal');
+                      var $panzoom = $section.find('.panzoom').panzoom();
+                      $panzoom.parent().on('mousewheel.focal', function( e ) {
+                        e.preventDefault();
+                        var delta = e.delta || e.originalEvent.wheelDelta;
+                        var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+                        $panzoom.panzoom('zoom', zoomOut, {
+                          animate: false,
+                          focal: e
+                        });
+                      });
+                    })();
+            </script>
+        </div>
+        <div id = "focal_2" class = "col">
+            <div class = "panzoom">
+                            <img src = {{img_file_path_2}}>
+            </div>
+            <script>
+                    (function() {
+                      var $section = $('#focal_2');
+                      var $panzoom = $section.find('.panzoom').panzoom();
+                      $panzoom.parent().on('mousewheel.focal_2', function( e ) {
+                        e.preventDefault();
+                        var delta = e.delta || e.originalEvent.wheelDelta;
+                        var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+                        $panzoom.panzoom('zoom', zoomOut, {
+                          animate: false,
+                          focal_2: e
+                        });
+                      });
+                    })();
+            </script>
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col">
+            {%if result is not none%}
+             <table class = "table" width = 200px>
+                {% for key, value in result.items() %}
+                    {% if key == 'fitness' %}
+                        {% for keyy, valuee in result['fitness'].items() %}
+                            <tr>
+                                <th> {{ keyy }} </th>
+                                <td> {{ valuee|round(3) }} </td>
+                            </tr>
+                        {% endfor %}
+                    {% else %}
+                     <tr>
+                         <th> {{ key }} </th>
+                        <td> {{ value|round(3) }} </td>
+                     </tr>
+                    {% endif %}
+                {% endfor %}
+                {%endif%}
+            </table>
+        </div>
+        <div class = "col">
+            {%if result_2 is not none%}
+            <table class="table" width = 200px>
+                    {% for key, value in result_2.items() %}
+                        {% if key == 'fitness' %}
+                            {% for keyy, valuee in result_2['fitness'].items() %}
+                                <tr>
+                                    <th> {{ keyy }} </th>
+                                    <td> {{ valuee|round(3) }} </td>
+                                </tr>
+                            {% endfor %}
+                        {% else %}
+                         <tr>
+                             <th> {{ key }} </th>
+                            <td> {{ value|round(3) }} </td>
+                         </tr>
+                        {% endif %}
+                    {% endfor %}
+                    {%endif%}
+            </table>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}

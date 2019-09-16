@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log>
+  <string key="concept:name" value="log"/>
+  <trace>
+    <string key="concept:name" value="0"/>
+    <float key="simulated:logProbability" value="-2.0794415416798357"/>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:27:42.869+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send for Credit Collection"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:30:42.869+02:00"/>
+      <string key="enabled" value="{'Payment', 'Send for Credit Collection', 'Send Fine'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="1"/>
+    <float key="simulated:logProbability" value="-2.0794415416798357"/>
+    <event>
+      <string key="concept:instance" value="1"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:29:03.935+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="1"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send for Credit Collection"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:32:03.935+02:00"/>
+      <string key="enabled" value="{'Payment', 'Send for Credit Collection', 'Send Fine'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="2"/>
+    <float key="simulated:logProbability" value="-2.772588722239781"/>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:29:31.890+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:30:31.890+02:00"/>
+      <string key="enabled" value="{'Payment', 'Send for Credit Collection', 'Send Fine'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="3"/>
+    <float key="simulated:logProbability" value="-2.0794415416798357"/>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:29:55.402+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="4"/>
+    <float key="simulated:logProbability" value="-2.0794415416798357"/>
+    <event>
+      <string key="concept:instance" value="4"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:30:53.494+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="4"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Payment"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:32:53.494+02:00"/>
+      <string key="enabled" value="{'Payment', 'Send for Credit Collection', 'Send Fine'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="5"/>
+    <float key="simulated:logProbability" value="-2.0794415416798357"/>
+    <event>
+      <string key="concept:instance" value="5"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:31:23.093+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="6"/>
+    <float key="simulated:logProbability" value="-2.772588722239781"/>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:33:46.875+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:34:46.875+02:00"/>
+      <string key="enabled" value="{'Payment', 'Send for Credit Collection', 'Send Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send for Credit Collection"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:37:46.875+02:00"/>
+      <string key="enabled" value="{'Send for Credit Collection', 'Insert Fine Notification'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="7"/>
+    <float key="simulated:logProbability" value="-2.0794415416798357"/>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:34:43.946+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="8"/>
+    <float key="simulated:logProbability" value="-4.1588830833596715"/>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:37:07.293+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:38:07.293+02:00"/>
+      <string key="enabled" value="{'Payment', 'Send for Credit Collection', 'Send Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Insert Fine Notification"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:39:07.293+02:00"/>
+      <string key="enabled" value="{'Send for Credit Collection', 'Insert Fine Notification'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Insert Date Appeal to Prefecture"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:40:07.293+02:00"/>
+      <string key="enabled" value="{'Insert Date Appeal to Prefecture'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send Appeal to Prefecture"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:42:07.293+02:00"/>
+      <string key="enabled" value="{'Send Appeal to Prefecture'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Receive Result Appeal from Prefecture"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:43:07.293+02:00"/>
+      <string key="enabled" value="{'Receive Result Appeal from Prefecture'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Notify Result Appeal to Offender"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:44:07.293+02:00"/>
+      <string key="enabled" value="{'Notify Result Appeal to Offender'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="9"/>
+    <float key="simulated:logProbability" value="-2.772588722239781"/>
+    <event>
+      <string key="concept:instance" value="9"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Create Fine"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:40:06.673+02:00"/>
+      <string key="enabled" value="{'Create Fine'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="9"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="Send for Credit Collection"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T17:44:06.673+02:00"/>
+      <string key="enabled" value="{'Payment', 'Send for Credit Collection', 'Send Fine'}"/>
+    </event>
+  </trace>
+</log>

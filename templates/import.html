@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div>
+    <form action = "/{{title}}" method = "post" enctype="multipart/form-data">
+        <h4 style = "margin-top:20px"> Select file</h4>
+        <div style="width:300px;">
+            <select class="browser-default custom-select" name = "file">
+                {% for file in files %}
+                <option value = {{file}} label = {{file}}></option>
+                {%endfor%}
+            </select>
+        </div>
+        <h4 style = "margin-top:20px">Select type of file</h4>
+        <div  class="btn-group btn-group-toggle" data-toggle="buttons">
+
+            <label class = "btn btn-info">
+                <input type = "radio" name = "file_type" value = "xes">xes
+            </label>
+            <label class = "btn btn-info">
+                <input type = "radio" name = "file_type" value = "xes++">xes++
+            </label>
+        </div>
+        <h4 style = "margin-top:20px"> Select model to show</h4>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class = "btn btn-info">
+                <input type = "radio" name = "model" value = "ts">transition system
+            </label>
+            <label class = "btn btn-info">
+            <input type = "radio" name = "model" value = "sbr">state based region
+            </label>
+            <label class = "btn btn-info">
+            <input type = "radio" name = "model" value = "alpha">alpha miner
+            </label>
+            <label class = "btn btn-info">
+            <input type = "radio" name = "model" value = "induct">inductive miner
+            </label>
+        </div>
+        <div>
+            <input type = "hidden" name = "afreq" value = "0">
+            <input type = "hidden" name = "sfreq" value = "0">
+        </div>
+        <div style="margin-top:30px">
+            <input class = "btn btn-outline-info" type = "submit" value = "show">
+        </div>
+
+    </form>
+</div>
+{% endblock %}

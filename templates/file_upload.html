@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div style = "width:300px" class = "input-group">
+    <div class = "custom-file">
+        <form action = "/success" method = "post" enctype="multipart/form-data">
+            <div style="margin-bottom:100px">
+                <input type="file" id = "inputFile" class = "custom-file-input" name="file" aria-describedby="inputGroupFileAddon01"/>
+                <label class="custom-file-label" for="inputFile">Choose file</label>
+            </div>
+            <button class="btn btn-info my-4 btn-block" type="submit">Upload File</button>
+
+    </form>
+
+</div>
+{% endblock %}
+

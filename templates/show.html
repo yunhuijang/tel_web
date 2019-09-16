@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<div>
+    <div style="margin-bottom: 30px">
+        {% for key, value in stat.items() %}
+        <mark>{{key}}</mark> : {{value}}
+    {% endfor %}
+    </div>
+    {% if result is none %}
+    <div>
+        <form action = "/show" method = "post" enctype="multipart/form-data">
+    <div style = "width:200px; margin-bottom:20px;" >
+        afreq
+            <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}} value = {{parameters.get('afreq_thresh')}} step = "1">
+        sfreq
+            <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}} value = {{parameters.get('sfreq_thresh')}} step = "1">
+    </div>
+        <div>
+            {% for key, value in option.items() %}
+            <input type="hidden" name={{key}} value = {{value}}>
+            {% endfor %}
+        </div>
+        <div style="padding-bottom:20px">
+            <input class = "btn btn-outline-info" type = "submit" value = "show">
+        </div>
+
+    </form>
+    </div>
+
+    {% endif %}
+    <section id = "focal">
+        <div class = "parent">
+            <div class = "panzoom">
+                <img src = {{img_file_path}}>
+            </div>
+        </div>
+        <script>
+        (function() {
+          var $section = $('#focal');
+          var $panzoom = $section.find('.panzoom').panzoom();
+          $panzoom.parent().on('mousewheel.focal', function( e ) {
+            e.preventDefault();
+            var delta = e.delta || e.originalEvent.wheelDelta;
+            var zoomOut = delta ? delta < 0 : e.originalEvent.deltaY > 0;
+            $panzoom.panzoom('zoom', zoomOut, {
+              animate: false,
+              focal: e
+            });
+          });
+        })();
+      </script>
+    </section>
+
+    <div>
+        <table class = "table  table-sm">
+                {%if result is not none%}
+            {% for key, value in result.items() %}
+                {% if key == 'fitness' %}
+                    {% for keyy, valuee in result['fitness'].items() %}
+                        <tr>
+                            <th style="width: 50%"> {{ keyy }} </th>
+                            <td> {{ valuee|round(3) }} </td>
+                        </tr>
+                    {% endfor %}
+                {% else %}
+                 <tr>
+                     <th style="width: 50%"> {{ key }} </th>
+                    <td> {{ value|round(3) }} </td>
+                 </tr>
+                {% endif %}
+            {% endfor %}
+                {%endif%}
+        </table>
+    </div>
+
+</div>
+{% endblock %}
