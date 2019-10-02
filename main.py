@@ -38,9 +38,10 @@ def show():
     parameters = {}
     option = {}
 
-    if request.form['model'] == 'ts':
+    if request.form['model'] in ['ts', 'sbr']:
         parameters['afreq_thresh'] = int(request.form['afreq'])
         parameters['sfreq_thresh'] = int(request.form['sfreq'])
+
     model = request.form['model']
     file_name = request.form['file']
     input_file_path = os.path.join("input_data", file_name)
@@ -53,14 +54,16 @@ def show():
     option['model'] = model
     option['file'] = file_name
     option['file_type'] = file_type
+
     img_file_path, result, max_thresh,  stat = show_model(model, tel, file_name, parameters)
+
     return render_template('show.html', img_file_path = '../' + img_file_path, result = result, stat = stat, option=option, parameters= parameters, max_thresh = max_thresh)
 
 @app.route('/compare', methods = ['POST'])
 def compare():
     parameters = {}
     option = {}
-    if request.form['model'] == 'ts':
+    if request.form['model'] in ['ts', 'sbr']:
         parameters['afreq_thresh'] = int(request.form['afreq'])
         parameters['sfreq_thresh'] = int(request.form['sfreq'])
 

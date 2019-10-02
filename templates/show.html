@@ -1,22 +1,61 @@
 {% extends 'layout.html' %}
 
 {% block content %}
+<style>
 
+    .freq
+    {
+    width:50%;
+    text-align: center;
+    }
+
+</style>
+<script>
+function updateafreq(val) {
+          document.getElementById('afreq').value=val;
+        }
+function updatesfreq(val)
+{
+    document.getElementById('sfreq').value=val;
+}
+
+</script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <div>
-    <div style="margin-bottom: 30px">
+    <div style="margin-bottom: 30px"> <!-- show statistics for model-->
         {% for key, value in stat.items() %}
         <mark>{{key}}</mark> : {{value}}
     {% endfor %}
     </div>
-    {% if result is none %}
-    <div>
+    {% if ((result is none) or (option.model == 'sbr'))%}
+    <div> <!-- options for transition system -->
         <form action = "/show" method = "post" enctype="multipart/form-data">
-    <div style = "width:200px; margin-bottom:20px;" >
-        afreq
-            <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}} value = {{parameters.get('afreq_thresh')}} step = "1">
-        sfreq
-            <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}} value = {{parameters.get('sfreq_thresh')}} step = "1">
-    </div>
+            <div style = "width:200px; margin-bottom:20px;" >
+                <div>
+                    afreq
+                    <div class = "row">
+                        <div class = "col">
+                            <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}}
+                            value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateafreq(this.value);">
+                        </div>
+                        <div class = "col">
+                            <input type="text" class="freq" id="afreq" value={{parameters.get('afreq_thresh')}}>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    sfreq
+                    <div class = "row">
+                        <div class = "col">
+                            <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}}
+                           value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updatesfreq(this.value);">
+                        </div>
+                        <div class = "col">
+                             <input type="text" class = "freq" id="sfreq" value={{parameters.get('sfreq_thresh')}}>
+                        </div>
+                    </div>
+                </div>
+            </div>
         <div>
             {% for key, value in option.items() %}
             <input type="hidden" name={{key}} value = {{value}}>
@@ -26,11 +65,11 @@
             <input class = "btn btn-outline-info" type = "submit" value = "show">
         </div>
 
-    </form>
+        </form>
     </div>
 
     {% endif %}
-    <section id = "focal">
+    <section id = "focal"> <!-- show models -->
         <div class = "parent">
             <div class = "panzoom">
                 <img src = {{img_file_path}}>
@@ -53,7 +92,7 @@
       </script>
     </section>
 
-    <div>
+    <div> <!--show quality measures for models -->
         <table class = "table  table-sm">
                 {%if result is not none%}
             {% for key, value in result.items() %}

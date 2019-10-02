@@ -6,6 +6,8 @@ from pm4py.algo.discovery.dfg.adapters.pandas import df_statistics
 from pm4py.objects.conversion.log import factory as log_conversion
 from pm4py.objects.log.util import xes as xes_util
 from pm4py.objects.log.util import general as log_util
+from tests.translucent_event_log_new.objects.tel import tel
+from tests.translucent_event_log_new.algo.discover_petrinet.alpha_revise import trans_alpha
 
 ALPHA_VERSION_CLASSIC = 'classic'
 ALPHA_VERSION_PLUS = 'plus'
@@ -52,7 +54,10 @@ def apply(log, parameters=None, variant=ALPHA_VERSION_CLASSIC):
                                           activity_key=parameters[pmutil.constants.PARAMETER_CONSTANT_ACTIVITY_KEY],
                                           timestamp_key=parameters[pmutil.constants.PARAMETER_CONSTANT_TIMESTAMP_KEY])
         return VERSIONS_DFG[variant](dfg, parameters=parameters)
-    return VERSIONS[variant](log_conversion.apply(log, parameters, log_conversion.TO_EVENT_LOG), parameters)
+    if isinstance(log[0][0], tel.Event):
+        return trans_alpha(log, parameters)
+    else:
+        return VERSIONS[variant](log_conversion.apply(log, parameters, log_conversion.TO_EVENT_LOG), parameters)
 
 
 def apply_dfg(dfg, parameters=None, version=ALPHA_VERSION_CLASSIC):

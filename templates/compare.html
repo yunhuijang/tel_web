@@ -4,9 +4,25 @@
 <style>
     img
     {
-    width:100%
+    width:100%;
     }
+    .freq
+    {
+    width:50%;
+    text-align: center;
+    }
+
 </style>
+<script>
+function updateafreq(val) {
+          document.getElementById('afreq').value=val;
+        }
+function updatesfreq(val)
+{
+    document.getElementById('sfreq').value=val;
+}
+
+</script>
 <div class = "container" >
     <div class = "row">
         <div class = "col">
@@ -25,14 +41,34 @@
         </div>
     </div>
     <div class = "row">
-            {%if result is none %}
+            {%if ((result is none) or (option.model == 'sbr'))%}
         <div class = "col">
             <form action = "/compare" method = "post" enctype="multipart/form-data">
             <div style = "width:200px; margin-bottom:20px;" >
-                afreq
-                    <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}} value = {{parameters.get('afreq_thresh')}} step = "1">
-                sfreq
-                    <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}} value = {{parameters.get('sfreq_thresh')}} step = "1">
+                <div>
+                    afreq
+                    <div class = "row">
+                        <div class = "col">
+                            <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}}
+                            value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateafreq(this.value);">
+                        </div>
+                        <div class = "col">
+                            <input type="text" class="freq" id="afreq" value={{parameters.get('afreq_thresh')}}>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    sfreq
+                    <div class = "row">
+                        <div class = "col">
+                            <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}}
+                           value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updatesfreq(this.value);">
+                        </div>
+                        <div class = "col">
+                             <input type="text" class = "freq" id="sfreq" value={{parameters.get('sfreq_thresh')}}>
+                        </div>
+                    </div>
+                </div>
             </div>
                 <div >
                     {% for key, value in option.items() %}

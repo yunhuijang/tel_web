@@ -6,12 +6,16 @@ from pm4py.algo.discovery.dfg.utils import dfg_utils
 from pm4py.objects import petri
 from pm4py.algo.discovery.alpha.versions import classic
 from pm4py.objects.petri.petrinet import Marking
+from pm4py.algo.discovery.alpha.utils import endpoints
+from pm4py.util.constants import PARAMETER_CONSTANT_ACTIVITY_KEY
+from pm4py import util as pm_util
 
-
-def trans_alpha(log):
+def trans_alpha(log, parameters=None):
     dfg = {k: v for k, v in dfg_inst.apply(log).items() if v > 0}
-    start_activities = dfg_utils.infer_start_activities(dfg)
-    end_activities = dfg_utils.infer_end_activities(dfg)
+    start_activities = endpoints.derive_start_activities_from_log(log, parameters[
+        pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY])
+    end_activities = endpoints.derive_end_activities_from_log(log, parameters[
+        pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY])
 
     labels = set()
     for el in dfg:
@@ -28,21 +32,27 @@ def trans_alpha(log):
     pairs = list(map(lambda p: ({p[0]}, {p[1]}),
                      filter(lambda p: classic.__initial_filter(alpha_abstraction.parallel_relation, p),
                             alpha_abstraction.causal_relation)))
-
+    #this part added
     parallel_set = alpha_abstraction.parallel_relation
     loop_set = set()
     for rel in parallel_set.copy():
+        not_loop_flag = False
         pre_act = rel[0]
         post_act = rel[1]
         for trace in log:
-            for i in range(len(trace)):
+            for i in range(len(trace)-1):
                     if trace[i]['concept:name'] == pre_act and trace[i+1]['concept:name'] == post_act:
                         pre_en = trace[i]['enabled']
-                        if post_act in pre_en:
+                        #todo: alpha miner changed (for all traces, condition o -> make it loop)
+                        if post_act in pre_en: #not loop
+                            not_loop_flag = True
+                        else: #loop
                             pass
-                        else:
-                            loop_set.add((pre_act, post_act)) #find loops based on enabling information
+        if not not_loop_flag:
+            loop_set.add((pre_act, post_act))
 
+    #find loops based on enabling information
+    #this part added
     for i in range(0, len(pairs)):
         t1 = pairs[i]
         for j in range(i, len(pairs)):

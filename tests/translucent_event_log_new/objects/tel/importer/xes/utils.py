@@ -100,11 +100,11 @@ def set_enabled(tel, and_window = 1):
     for trace in tel:
         start_act.add(trace[0]['concept:name']) #make start activity list
 
-    pair = set()
-    for act in in_:
-        for actt in in_:
-            if in_[act] == in_[actt] and act != actt:
-                pair.add((act, actt)) #find activity pair that have same input condition
+    # pair = set()
+    # for act in in_:
+    #     for actt in in_:
+    #         if in_[act] == in_[actt] and act != actt:
+    #             pair.add((act, actt)) #find activity pair that have same input condition
 
     for trace in tel:
         case_id = trace.attributes['concept:name']
