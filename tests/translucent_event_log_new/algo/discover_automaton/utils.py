@@ -1,6 +1,8 @@
 from tests.translucent_event_log_new.objects.automaton import transition_system as ts
 from tests.translucent_event_log_new.objects.automaton import defaults
 from datetime import timedelta
+from pm4py.algo.discovery.transition_system import factory as trans_factory
+from tests.translucent_event_log_new.objects.tel.tel import Event
 
 def add_arc_from_to(name, fr, to, auto, data=None):
     """
@@ -93,13 +95,16 @@ def apply_annotated_automaton(tel):
     -----------
     :param tel: translucent event log
     :param automaton: accepting automaton
+    :param parameters:
+    tel: translucent event log
+    log: normal event log
 
     Returns
     --------
     annotated discovered automaton
     '''
-
     aut = discover_automaton(tel)
+
     state_list = aut.states
     trans_list = aut.transitions
 
@@ -186,8 +191,10 @@ def discover_annotated_automaton(tel, parameters = None):
     stavg_thresh = parameters[
         defaults.STAVG_THRESH] if defaults.STAVG_THRESH in parameters else defaults.DEFAULT_STAVG_THRESH
 
-
-    auto = apply_annotated_automaton(tel)
+    if isinstance(tel[0][0], Event):
+        auto = apply_annotated_automaton(tel)
+    else:
+        auto = trans_factory.apply(tel)
     auto.filter(afreq_thresh = afreq_thresh, atsum_thresh = atsum_thresh,
                    atavg_thresh = atavg_thresh, sfreq_thresh = sfreq_thresh,
                    stsum_thresh = stsum_thresh, stavg_thresh = stavg_thresh)

@@ -20,59 +20,21 @@ function updatesfreq(val)
 }
 
 </script>
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <div>
-    <div style="margin-bottom: 30px"> <!-- show statistics for model-->
+    <div style="margin-bottom: 30px; padding: 5px;" > <!-- show statistics for model-->
+        {% set img_name = img_file_path[:-3].split('\\') %}
+        {% set name = img_name[2].split('_') %}
+        <mark>event source</mark>: {{name[0]}}
+        <mark>model type</mark>: {{name[1]}}
         {% for key, value in stat.items() %}
-        <mark>{{key}}</mark> : {{value}}
-    {% endfor %}
-    </div>
-    {% if ((result is none) or (option.model == 'sbr'))%}
-    <div> <!-- options for transition system -->
-        <form action = "/show" method = "post" enctype="multipart/form-data">
-            <div style = "width:200px; margin-bottom:20px;" >
-                <div>
-                    afreq
-                    <div class = "row">
-                        <div class = "col">
-                            <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}}
-                            value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateafreq(this.value);">
-                        </div>
-                        <div class = "col">
-                            <input type="text" class="freq" id="afreq" value={{parameters.get('afreq_thresh')}}>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    sfreq
-                    <div class = "row">
-                        <div class = "col">
-                            <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}}
-                           value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updatesfreq(this.value);">
-                        </div>
-                        <div class = "col">
-                             <input type="text" class = "freq" id="sfreq" value={{parameters.get('sfreq_thresh')}}>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div>
-            {% for key, value in option.items() %}
-            <input type="hidden" name={{key}} value = {{value}}>
-            {% endfor %}
-        </div>
-        <div style="padding-bottom:20px">
-            <input class = "btn btn-outline-info" type = "submit" value = "show">
-        </div>
-
-        </form>
+            <mark>{{key}}</mark> : {{value}}
+        {% endfor %}
     </div>
 
-    {% endif %}
     <section id = "focal"> <!-- show models -->
         <div class = "parent">
             <div class = "panzoom">
-                <img src = {{img_file_path}}>
+                <img src = {{img_file_path}} style="display:block; margin:0px auto;">
             </div>
         </div>
         <script>
@@ -92,16 +54,76 @@ function updatesfreq(val)
       </script>
     </section>
 
+    {% if ((result is none) or (option.model == 'sbr'))%}
+    <div class = "container" style="padding-bottom:10px;" > <!-- options for transition system -->
+        <form action = "/show" method = "post" enctype="multipart/form-data">
+            <button type="button" class = "btn btn-primary" data-toggle="modal" data-target="#tsoption" style="display:block; margin:0 auto;">
+                Change Option
+            </button>
+            <div class = "modal fade" id = "tsoption">
+                <div class = "modal-dialog">
+                    <div class = "modal-content">
+                        <div class = "modal-header">
+                            Transition System Parameter
+                        </div>
+                        <div class = "modal-body">
+                            <div>
+                            afreq
+                            <div class = "row">
+                                <div class = "col">
+                                    <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}}
+                                    value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateafreq(this.value);">
+                                </div>
+                                <div class = "col">
+                                    <input type="text" class="freq" id="afreq" value={{parameters.get('afreq_thresh')}}>
+                                </div>
+                            </div>
+                            </div>
+                            <div>
+                                sfreq
+                                <div class = "row">
+                                    <div class = "col">
+                                        <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}}
+                                       value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updatesfreq(this.value);">
+                                    </div>
+                                    <div class = "col">
+                                         <input type="text" class = "freq" id="sfreq" value={{parameters.get('sfreq_thresh')}}>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            {% for key, value in option.items() %}
+                            <input type="hidden" name={{key}} value = {{value}}>
+                            {% endfor %}
+                            </div>
+                        </div>
+
+                        <div class= "modal-footer">
+                            <input class = "btn btn-outline-info" type = "submit" value = "show">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+    {% endif %}
+
+
     <div> <!--show quality measures for models -->
         <table class = "table  table-sm">
                 {%if result is not none%}
             {% for key, value in result.items() %}
                 {% if key == 'fitness' %}
                     {% for keyy, valuee in result['fitness'].items() %}
+                        {% if keyy == "log_fitness" %}
                         <tr>
                             <th style="width: 50%"> {{ keyy }} </th>
                             <td> {{ valuee|round(3) }} </td>
                         </tr>
+                        {% endif %}
                     {% endfor %}
                 {% else %}
                  <tr>

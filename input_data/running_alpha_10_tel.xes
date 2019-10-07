@@ -1,0 +1,700 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<log>
+  <string key="concept:name" value="running_alpha_10 (from Petri net (Alpha))"/>
+  <trace>
+    <string key="concept:name" value="0"/>
+    <float key="simulated:logProbability" value="-5.0875963352323845"/>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:53:10.301+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine thoroughly"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:54:10.301+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:55:10.301+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:10.301+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:10.301+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:10.301+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:10.301+02:00"/>
+      <string key="enabled" value="{'examine casually'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:00:10.301+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="0"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="pay compensation"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:01:10.301+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="1"/>
+    <float key="simulated:logProbability" value="-2.8903717578961645"/>
+    <event>
+      <string key="concept:instance" value="1"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:53:26.217+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="1"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:54:26.217+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="1"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine thoroughly"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:55:26.217+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="1"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:26.217+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="1"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="pay compensation"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:26.217+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="2"/>
+    <float key="simulated:logProbability" value="-7.97796809312855"/>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:54:14.710+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:55:14.710+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:14.710+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:14.710+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:14.710+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:14.710+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:00:14.710+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:01:14.710+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:02:14.710+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:03:14.710+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine thoroughly"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:04:14.710+02:00"/>
+      <string key="enabled" value="{'examine casually'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:05:14.710+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="2"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reject request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:06:14.710+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="3"/>
+    <float key="simulated:logProbability" value="-7.2848209125686045"/>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:54:16.756+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:55:16.756+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:16.756+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:16.756+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:16.756+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:16.756+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine thoroughly"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:00:16.756+02:00"/>
+      <string key="enabled" value="{'examine casually'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:01:16.756+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:02:16.756+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:03:16.756+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:04:16.756+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:05:16.756+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="3"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="pay compensation"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:06:16.756+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="4"/>
+    <float key="simulated:logProbability" value="-2.1972245773362196"/>
+    <event>
+      <string key="concept:instance" value="4"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:55:34.250+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="4"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:34.250+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="4"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:34.250+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="4"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:34.250+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="4"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="pay compensation"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:34.250+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="5"/>
+    <float key="simulated:logProbability" value="-2.1972245773362196"/>
+    <event>
+      <string key="concept:instance" value="5"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:55:40.248+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="5"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:40.248+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="5"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:40.248+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="5"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:40.248+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="5"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reject request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:40.248+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="6"/>
+    <float key="simulated:logProbability" value="-5.0875963352323845"/>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:55:57.604+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine thoroughly"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:57.604+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:57.604+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:57.604+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:57.604+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:00:57.604+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:01:57.604+02:00"/>
+      <string key="enabled" value="{'examine casually'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:02:57.604+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="6"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="pay compensation"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:03:57.604+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="7"/>
+    <float key="simulated:logProbability" value="-4.394449154672439"/>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:41.444+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:41.444+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:41.444+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:41.444+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:00:41.444+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:01:41.444+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:02:41.444+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:03:41.444+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="7"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reject request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:04:41.444+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="8"/>
+    <float key="simulated:logProbability" value="-4.394449154672439"/>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:56:44.014+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine thoroughly"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:44.014+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:44.014+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:44.014+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reinitiate request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:00:44.014+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine casually"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:01:44.014+02:00"/>
+      <string key="enabled" value="{'examine casually', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:02:44.014+02:00"/>
+      <string key="enabled" value="{'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:03:44.014+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="8"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="pay compensation"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:04:44.014+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+  <trace>
+    <string key="concept:name" value="9"/>
+    <float key="simulated:logProbability" value="-2.8903717578961645"/>
+    <event>
+      <string key="concept:instance" value="9"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="register request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:57:15.864+02:00"/>
+      <string key="enabled" value="{'register request'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="9"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="check ticket"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:58:15.864+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly', 'check ticket'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="9"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="examine thoroughly"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T12:59:15.864+02:00"/>
+      <string key="enabled" value="{'examine casually', 'examine thoroughly'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="9"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="decide"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:00:15.864+02:00"/>
+      <string key="enabled" value="{'decide'}"/>
+    </event>
+    <event>
+      <string key="concept:instance" value="9"/>
+      <string key="lifecycle:transition" value="complete"/>
+      <string key="concept:name" value="reject request"/>
+      <boolean key="concept:simulated" value="True"/>
+      <date key="time:timestamp" value="2019-09-16T13:01:15.864+02:00"/>
+      <string key="enabled" value="{'reinitiate request', 'pay compensation', 'reject request'}"/>
+    </event>
+  </trace>
+</log>

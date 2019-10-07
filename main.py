@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, request, url_for
+from flask import Flask, render_template, request
 import os
 from importer import xes_import, tel_import
 from show import show_model, compare_model
@@ -6,7 +6,9 @@ from pm4py.objects.log.importer.xes import factory as xes_import_factory
 
 app = Flask(__name__)
 
-
+@app.errorhandler(500)
+def wrong_log_type(e):
+    return render_template("500.html"), 500
 
 @app.route('/')
 def file_upload():
@@ -57,7 +59,8 @@ def show():
 
     img_file_path, result, max_thresh,  stat = show_model(model, tel, file_name, parameters)
 
-    return render_template('show.html', img_file_path = '../' + img_file_path, result = result, stat = stat, option=option, parameters= parameters, max_thresh = max_thresh)
+    return render_template('show.html', img_file_path = '../' + img_file_path, result = result, stat = stat, option=option,
+                           parameters= parameters, max_thresh = max_thresh)
 
 @app.route('/compare', methods = ['POST'])
 def compare():
@@ -82,10 +85,10 @@ def compare():
     option['file'] = file_name
     option['file_type'] = file_type
 
-    img_file_path, img_file_path_2, result, result_2, max_thresh = compare_model(model, file_name, tel, log, parameters)
+    img_file_path, img_file_path_2, result, result_2, max_thresh, stat = compare_model(model, file_name, tel, log, parameters)
 
     return render_template('compare.html', img_file_path = img_file_path, img_file_path_2 = img_file_path_2,
-                           option = option, parameters = parameters, result = result, result_2 = result_2, max_thresh = max_thresh)
+                           option = option, parameters = parameters, result = result, result_2 = result_2, max_thresh = max_thresh, stat = stat)
 
 # No cacheing at all for API endpoints.
 @app.after_request

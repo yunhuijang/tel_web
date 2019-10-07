@@ -3,7 +3,7 @@ import collections
 from pm4py.algo.discovery.transition_system.parameters import *
 from pm4py.objects.log import util as log_util
 from pm4py.objects.log.util.xes import DEFAULT_NAME_KEY
-from pm4py.objects.transition_system import transition_system as ts
+from tests.translucent_event_log_new.objects.automaton import transition_system as ts
 from pm4py.util.constants import PARAMETER_CONSTANT_ACTIVITY_KEY
 
 
@@ -36,9 +36,38 @@ def __construct_state_path(view_sequence, transition_system):
             st.incoming.add(t)
         else:
             t = t['t']
+        flag_s = False
+        for state in transition_system.states:
+            if sf.name == state.name:
+                sf.sfreq +=1
+                flag_s = True
+                break
+        if not flag_s:
+            sf.sfreq = 1
+
         transition_system.states.add(sf)
+
+        flag_ss = False
+        for state in transition_system.states:
+            if st.name == state.name:
+                st.sfreq +=1
+                flag_ss = True
+                break
+        if not flag_ss:
+            st.sfreq = 1
+
         transition_system.states.add(st)
+        flag_t = False
+        for trans in transition_system.transitions:
+            if t.from_state == trans.from_state and t.to_state == trans.to_state:
+                t.afreq +=1
+                flag_t = True
+                break
+        if not flag_t:
+            t.afreq = 1
+
         transition_system.transitions.add(t)
+
 
 
 def __compute_view_sequence(trace, parameters):

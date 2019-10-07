@@ -6,7 +6,6 @@ from tests.translucent_event_log_new.algo.discover_petrinet import state_based_r
 from pm4py.algo.discovery.inductive import factory as inductive_miner
 from pm4py.visualization.transition_system import factory as vis_factory
 from pm4py.visualization.petrinet import factory as petri_vis_factory
-from pm4py.algo.discovery.transition_system import factory as trans_factory
 from pm4py.evaluation import factory as evaluation_factory
 from pm4py.statistics.traces.log import case_statistics
 
@@ -29,6 +28,11 @@ def evaluation(net, im, fm, log):
 
 
 def stat(log):
+    '''
+    Shows statistical information of log
+    :param log: input log
+    :return: stat_dict(# of events, # of variants, # of cases)
+    '''
     a = case_statistics.get_variant_statistics(log)
     num_event = 0
     for trace in log:
@@ -43,17 +47,24 @@ def stat(log):
 
 
 def show(model, tel, file_name, parameters):
+    '''
+    Show model and its quality measures
+    :param model: model type (transition system, state based region, inductive miner, alpha miner)
+    :param tel: input log
+    :param file_name: img file name to show model
+    :param parameters: parmater for transition system (afreq, sfreq)
+    :return:
+    '''
     if model in ['ts', 'sbr']:
         if isinstance(tel[0][0], tel_event):
             output_file_path = os.path.join("static", "images", file_name[:file_name.find('.')] + '_' + model + '_' +
                                          str(parameters['afreq_thresh']) + '_' + str(parameters['sfreq_thresh'])+".png")
         else:
-            output_file_path = os.path.join("static", "images",
-                                          '2' + file_name[:file_name.find('.')] + '_' + model + ".png")
-        if isinstance(tel[0][0], tel_event):
-            auto = utils.discover_annotated_automaton(tel, parameters=parameters)
-        else:
-            auto = trans_factory.apply(tel)
+            output_file_path = os.path.join("static", "images", "2" + "_" +  file_name[:file_name.find('.')] + '_' + model + '_' +
+                                         str(parameters['afreq_thresh']) + '_' + str(parameters['sfreq_thresh'])+".png")
+
+        auto = utils.discover_annotated_automaton(tel, parameters=parameters)
+
         max_thresh = {}
         max_afreq = 0
         max_sfreq = 0
@@ -67,10 +78,7 @@ def show(model, tel, file_name, parameters):
         max_thresh['sfreq'] = max_sfreq
 
         if model == 'ts':
-            if isinstance(tel[0][0], tel_event):
-                gviz = vis_factory.apply(auto)
-            else:
-                gviz = vis_factory.apply(auto, parameters={'show_afreq':False})
+            gviz = vis_factory.apply(auto)
             vis_factory.save(gviz, output_file_path)
             result = None
         else:
@@ -101,7 +109,7 @@ def show(model, tel, file_name, parameters):
 
 def show_model(model, tel, file_name, parameters):
     '''
-    Makes image file to show model
+    Show one model (show model)
     :param model:
     :param tel:
     :param file_name:
@@ -116,8 +124,17 @@ def show_model(model, tel, file_name, parameters):
 
 
 def compare_model(model, file_name, tel, log, parameters):
-
+    '''
+    Show two models (compare model)
+    :param model:
+    :param file_name:
+    :param tel:
+    :param log:
+    :param parameters:
+    :return:
+    '''
+    statis = stat(tel)
     output_file_path, result, max_thresh = show(model, tel, file_name, parameters)
     output_file_path_2, result_2, _ = show(model, log, file_name, parameters)
 
-    return output_file_path, output_file_path_2, result, result_2, max_thresh
+    return output_file_path, output_file_path_2, result, result_2, max_thresh, statis
