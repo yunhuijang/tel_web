@@ -193,11 +193,12 @@ def discover_annotated_automaton(tel, parameters = None):
 
     if isinstance(tel[0][0], Event):
         auto = apply_annotated_automaton(tel)
+        auto.filter(afreq_thresh=afreq_thresh, atsum_thresh=atsum_thresh,
+                    atavg_thresh=atavg_thresh, sfreq_thresh=sfreq_thresh,
+                    stsum_thresh=stsum_thresh, stavg_thresh=stavg_thresh)
     else:
-        auto = trans_factory.apply(tel)
-    auto.filter(afreq_thresh = afreq_thresh, atsum_thresh = atsum_thresh,
-                   atavg_thresh = atavg_thresh, sfreq_thresh = sfreq_thresh,
-                   stsum_thresh = stsum_thresh, stavg_thresh = stavg_thresh)
+        auto = trans_factory.apply(tel, parameters)
+
 
     return auto
 

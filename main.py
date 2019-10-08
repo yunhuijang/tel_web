@@ -3,6 +3,7 @@ import os
 from importer import xes_import, tel_import
 from show import show_model, compare_model
 from pm4py.objects.log.importer.xes import factory as xes_import_factory
+from pm4py.algo.discovery.transition_system.parameters import *
 
 app = Flask(__name__)
 
@@ -65,10 +66,14 @@ def show():
 @app.route('/compare', methods = ['POST'])
 def compare():
     parameters = {}
+    parameters_2 = {}
     option = {}
     if request.form['model'] in ['ts', 'sbr']:
         parameters['afreq_thresh'] = int(request.form['afreq'])
         parameters['sfreq_thresh'] = int(request.form['sfreq'])
+        parameters_2[PARAM_KEY_DIRECTION] = request.form['PARAM_KEY_DIRECTION']
+        parameters_2[PARAM_KEY_VIEW] = request.form['PARAM_KEY_VIEW']
+        parameters_2[PARAM_KEY_WINDOW] = int(request.form['PARAM_KEY_WINDOW'])
 
     model = request.form['model']
     file_name = request.form['file']
@@ -85,10 +90,10 @@ def compare():
     option['file'] = file_name
     option['file_type'] = file_type
 
-    img_file_path, img_file_path_2, result, result_2, max_thresh, stat = compare_model(model, file_name, tel, log, parameters)
+    img_file_path, img_file_path_2, result, result_2, max_thresh, stat = compare_model(model, file_name, tel, log, parameters, parameters_2)
 
     return render_template('compare.html', img_file_path = img_file_path, img_file_path_2 = img_file_path_2,
-                           option = option, parameters = parameters, result = result, result_2 = result_2, max_thresh = max_thresh, stat = stat)
+                           option = option, parameters_2 = parameters_2, parameters = parameters, result = result, result_2 = result_2, max_thresh = max_thresh, stat = stat)
 
 # No cacheing at all for API endpoints.
 @app.after_request

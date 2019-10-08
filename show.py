@@ -8,7 +8,7 @@ from pm4py.visualization.transition_system import factory as vis_factory
 from pm4py.visualization.petrinet import factory as petri_vis_factory
 from pm4py.evaluation import factory as evaluation_factory
 from pm4py.statistics.traces.log import case_statistics
-
+from pm4py.algo.discovery.transition_system.parameters import *
 
 def evaluation(net, im, fm, log):
     '''
@@ -61,7 +61,7 @@ def show(model, tel, file_name, parameters):
                                          str(parameters['afreq_thresh']) + '_' + str(parameters['sfreq_thresh'])+".png")
         else:
             output_file_path = os.path.join("static", "images", "2" + "_" +  file_name[:file_name.find('.')] + '_' + model + '_' +
-                                         str(parameters['afreq_thresh']) + '_' + str(parameters['sfreq_thresh'])+".png")
+                                         str(parameters[PARAM_KEY_DIRECTION]) + '_' + str(parameters[PARAM_KEY_WINDOW])+ "_" + str(parameters[PARAM_KEY_VIEW]) + ".png")
 
         auto = utils.discover_annotated_automaton(tel, parameters=parameters)
 
@@ -123,7 +123,7 @@ def show_model(model, tel, file_name, parameters):
     return output_file_path, result, max_thresh, statis
 
 
-def compare_model(model, file_name, tel, log, parameters):
+def compare_model(model, file_name, tel, log, parameters, parameters_2):
     '''
     Show two models (compare model)
     :param model:
@@ -135,6 +135,6 @@ def compare_model(model, file_name, tel, log, parameters):
     '''
     statis = stat(tel)
     output_file_path, result, max_thresh = show(model, tel, file_name, parameters)
-    output_file_path_2, result_2, _ = show(model, log, file_name, parameters)
+    output_file_path_2, result_2, _ = show(model, log, file_name, parameters_2)
 
     return output_file_path, output_file_path_2, result, result_2, max_thresh, statis

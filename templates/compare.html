@@ -14,13 +14,9 @@
 
 </style>
 <script>
-function updateafreq(val) {
-          document.getElementById('afreq').value=val;
+function updateparam(name, val) {
+          document.getElementById(name).value=val;
         }
-function updatesfreq(val)
-{
-    document.getElementById('sfreq').value=val;
-}
 
 </script>
     <div style="margin-bottom: 30px;"> <!-- show statistics for model-->
@@ -92,66 +88,126 @@ function updatesfreq(val)
             </script>
         </div>
     </div>
+    {%if ((result is none) or (option.model == 'sbr'))%}
         <div class = "row">
-            {%if ((result is none) or (option.model == 'sbr'))%}
-            <div class = "col-sm-12">
-                <div class = "container" style="padding-bottom:10px;"> <!-- options for transition system -->
-                    <form action = "/compare" method = "post" enctype="multipart/form-data">
-                        <button type="button" class = "btn btn-primary" data-toggle="modal" data-target="#tsoption" style="display:block; margin:0 auto;">
-                            Change Option
-                        </button>
-                        <div class = "modal fade" id = "tsoption">
-                            <div class = "modal-dialog">
-                                <div class = "modal-content">
-                                    <div class = "modal-header">
-                                        Transition System Parameter
-                                    </div>
-                                    <div class = "modal-body">
-                                        <div>
-                                        afreq
-                                        <div class = "row">
-                                            <div class = "col">
-                                                <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}}
-                                                value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateafreq(this.value);">
-                                            </div>
-                                            <div class = "col">
-                                                <input type="text" class="freq" id="afreq" value={{parameters.get('afreq_thresh')}}>
-                                            </div>
+                <div class = "col"> <!-- option for translucent event log -->
+                    <div class = "container" style="padding-bottom:10px;"> <!-- options for transition system -->
+                        <form action = "/compare" method = "post" enctype="multipart/form-data">
+                            <button type="button" class = "btn btn-primary" data-toggle="modal" data-target="#tsoption" style="display:block; margin:0 auto;">
+                                Change Option
+                            </button>
+                            <div class = "modal fade" id = "tsoption">
+                                <div class = "modal-dialog">
+                                    <div class = "modal-content">
+                                        <div class = "modal-header">
+                                            Translucent Event Log Parameter
                                         </div>
-                                        </div>
-                                        <div>
-                                            sfreq
+                                        <div class = "modal-body">
+                                            <div>
+                                            afreq
                                             <div class = "row">
                                                 <div class = "col">
-                                                    <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}}
-                                                   value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updatesfreq(this.value);">
+                                                    <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}}
+                                                    value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateparam(this.name, this.value);">
                                                 </div>
                                                 <div class = "col">
-                                                     <input type="text" class = "freq" id="sfreq" value={{parameters.get('sfreq_thresh')}}>
+                                                    <input type="text" class="freq" id="afreq" value={{parameters.get('afreq_thresh')}}>
                                                 </div>
                                             </div>
+                                            </div>
+                                            <div>
+                                                sfreq
+                                                <div class = "row">
+                                                    <div class = "col">
+                                                        <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}}
+                                                       value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updateparam(this.name, this.value);">
+                                                    </div>
+                                                    <div class = "col">
+                                                         <input type="text" class = "freq" id="sfreq" value={{parameters.get('sfreq_thresh')}}>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                            {% for key, value in option.items() %}
+                                            <input type="hidden" name={{key}} value = {{value}}>
+                                            {% endfor %}
+                                                <input type="hidden" name="PARAM_KEY_WINDOW" value={{parameters_2.get('window')}}>
+                                                <input type = "hidden" name="PARAM_KEY_DIRECTION" value = {{parameters_2.get('direction')}}>
+                                                <input type = "hidden" name="PARAM_KEY_VIEW" value = {{parameters_2.get('view')}}>
+                                            </div>
                                         </div>
-                                        <div>
-                                        {% for key, value in option.items() %}
-                                        <input type="hidden" name={{key}} value = {{value}}>
-                                        {% endfor %}
+                                        <div class= "modal-footer">
+                                            <input class = "btn btn-outline-info" type = "submit" value = "show">
                                         </div>
-                                    </div>
-
-                                    <div class= "modal-footer">
-                                        <input class = "btn btn-outline-info" type = "submit" value = "show">
                                     </div>
                                 </div>
+
                             </div>
 
-                        </div>
-
-                    </form>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            <div class = "col"> <!-- option for normal event log -->
+                <div class = "container" style="padding-bottom:10px;"> <!-- options for transition system -->
+                        <form action = "/compare" method = "post" enctype="multipart/form-data">
+                            <button type="button" class = "btn btn-primary" data-toggle="modal" data-target="#tsoption_2" style="display:block; margin:0 auto;">
+                                Change Option
+                            </button>
+                            <div class = "modal fade" id = "tsoption_2" >
+                                <div class = "modal-dialog">
+                                    <div class = "modal-content">
+                                        <div class = "modal-header">
+                                            Normal Event Log Parameter
+                                        </div>
+                                        <div class = "modal-body">
+                                            <div>
+                                                window size
+                                                <div class = "row">
+                                                <input type = "number" id = "window" name="PARAM_KEY_WINDOW" value = {{parameters_2.get('window')}}
+                                                       onchange="updateparam(this.name, this.value);">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                view
+                                                <div class = "row">
+                                                    <select class="browser-default custom-select" name = "PARAM_KEY_VIEW" value={{parameters_2.get('view')}}>
+                                                        <option value="sequence" label="sequence"></option>
+                                                        <option value = "set" label="set"></option>
+                                                        <option value = "multiset" label="multiset"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                direction
+                                                <div class = "row">
+                                                    <select class="browser-default custom-select" name = "PARAM_KEY_DIRECTION" value={{parameters_2.get('direction')}}>
+                                                        <option value = 'forward' label="forward"></option>
+                                                        <option value = "backward" label="backward"></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div>
+                                            {% for key, value in option.items() %}
+                                            <input type="hidden" name={{key}} value = {{value}}>
+                                            {% endfor %}
+                                                <input type = "hidden" name = "afreq" value = {{parameters.get('afreq_thresh')}}>
+                                                <input type = "hidden" name = "sfreq" value = {{parameters.get('sfreq_thresh')}}>
+                                            </div>
+                                        </div>
+                                        <div class= "modal-footer">
+                                            <input class = "btn btn-outline-info" type = "submit" value = "show">
+                                        </div>
+                                    </div>
+                                </div>
 
-        {% endif %}
-    </div>
+                            </div>
+
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+    {% endif %}
     <div class = "row">
         <div class = "col">
             {%if result is not none%}
