@@ -1,47 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/input_data/Hospital_log.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/running_heu_10_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/running_heu_15_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/running_heu_5_tel.xes" afterDir="false" />
+    <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="Chaged options for normal event log&#10;&#10;- removed afreq, sfreq option in normal event log transition system&#10;- added window, view, direction option in normal event log transition system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/discovery/dfg/versions/native.py" beforeDir="false" afterPath="$PROJECT_DIR$/pm4py/algo/discovery/dfg/versions/native.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/discovery/inductive/versions/dfg/imdfa.py" beforeDir="false" afterPath="$PROJECT_DIR$/pm4py/algo/discovery/inductive/versions/dfg/imdfa.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/discovery/inductive/versions/dfg/imdfb.py" beforeDir="false" afterPath="$PROJECT_DIR$/pm4py/algo/discovery/inductive/versions/dfg/imdfb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/playout/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/playout/data_structures/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/playout/factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/playout/versions/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/playout/versions/basic_playout.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/versions/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/versions/basic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/log/util/get_prefixes.py" beforeDir="false" afterPath="$PROJECT_DIR$/pm4py/objects/log/util/get_prefixes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/log/util/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/pm4py/objects/log/util/log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/process_tree/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/process_tree/process_tree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/process_tree/pt_operator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/process_tree/semantics.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/process_tree/state.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/objects/process_tree/util.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/show.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/import.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/import.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/inductive_revise.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/inductive_revise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/state_based_region.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/state_based_region.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/heruistics_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/heruistics_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/running-example_tel.xes" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/running-example_tel.xes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/revise_inductive_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/revise_inductive_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,23 +57,23 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/pm4py-source-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs\df_complete_alpha" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\test_logs" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\js" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs\df_complete_alpha" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -283,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570560203014</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Revised some options (after test)">
+      <created>1571306223061</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1571306223061</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -316,7 +290,8 @@
     <MESSAGE value="remove duplicated codes for show model" />
     <MESSAGE value="Refactor&#10;&#10;- change navbar button&#10;- add afreq, sfreq to normal transition system&#10;- make transition system parameters applied to both (log, tel)&#10;- add error page" />
     <MESSAGE value="Chaged options for normal event log&#10;&#10;- removed afreq, sfreq option in normal event log transition system&#10;- added window, view, direction option in normal event log transition system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chaged options for normal event log&#10;&#10;- removed afreq, sfreq option in normal event log transition system&#10;- added window, view, direction option in normal event log transition system" />
+    <MESSAGE value="Revised some options (after test)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revised some options (after test)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -325,11 +300,6 @@
           <url>file://$PROJECT_DIR$/pm4py_source/tests/translucent_event_log_new/heruistics_test.py</url>
           <line>1</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test.py</url>
@@ -360,6 +330,11 @@
           <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py</url>
           <line>137</line>
           <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="106" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

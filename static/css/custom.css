@@ -24,3 +24,18 @@ margin-top:5px;
 {
 margin-top:5px;
 }
+#layout
+{
+margin-left: 50px
+}
+body {
+font-family: 'Trebuchet', sans-serif !important;
+}
+div#loading {
+width: 300px;
+height: 300px;
+display: none;
+background: url(/static/images/Ellipsis-1s-200px.gif) no-repeat;
+background-position: center;
+cursor: wait;
+}

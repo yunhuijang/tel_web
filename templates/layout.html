@@ -8,29 +8,21 @@
     <link rel = "stylesheet" href = "{{ url_for('static', filename='css/mdb.min.css') }}">
     <link rel = "stylesheet" href = "{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='css/custom.css') }}"
 
     <!--Scripts for zoom in and out-->
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.panzoom.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mousewheel.js') }}"></script>
-
+    <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
     {% if title %}
       <title>Translucent Event Log - {{ title }}</title>
     {% else %}
       <title>Translucent Event Log</title>
     {% endif %}
-    <style>
-      #layout
-      {
-      margin-left: 50px
-      }
-      body {
-    font-family: 'Trebuchet', sans-serif !important;
-      }
-    </style>
+
   </head>
   <body>
-
     <header style="padding-bottom:20px">
       <nav class = "navbar bg-info navbar-dark">
         <a class = "navbar-brand" href = "#">
@@ -62,18 +54,19 @@
         </ul>
       </nav>
     </header>
+    <div id="loading"></div>
+    <div id = "content">
     <main style="margin_top:20px" id = 'layout' role="main">
-      <div id="loading"></div>
     <!-- Main content block -->
     {% block content %}{% endblock %}
     </main>
+      </div>
   <!--Scripts-->
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-         <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
      <script type="text/javascript" src="{{ url_for('static', filename='js/mdb.min.js') }}"></script>
-   <script type="text/javascript" src="{{ url_for('static', filename='js/custom.js') }}"></script>
   </body>
   <div class="se-pre-con"></div>
 </html>

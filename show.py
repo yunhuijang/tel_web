@@ -3,13 +3,15 @@ from tests.translucent_event_log_new.algo.discover_automaton import utils
 from pm4py.algo.discovery.alpha import factory as alpha_miner
 from tests.translucent_event_log_new.objects.tel.tel import Event as tel_event
 from tests.translucent_event_log_new.algo.discover_petrinet import state_based_region as sb
-from pm4py.algo.discovery.inductive import factory as inductive_miner
 from pm4py.visualization.transition_system import factory as vis_factory
 from pm4py.visualization.petrinet import factory as petri_vis_factory
 from pm4py.evaluation import factory as evaluation_factory
 from pm4py.statistics.traces.log import case_statistics
 from pm4py.algo.discovery.transition_system.parameters import *
-from pm4py.objects.log.importer.xes import factory as xes_importer
+from tests.translucent_event_log_new.algo.discover_petrinet import inductive_revise
+from pm4py.algo.discovery.dfg import factory as dfg_factory
+from pm4py.visualization.dfg import factory as dfg_vis_factory
+
 
 def evaluation(net, im, fm, log):
     '''
@@ -56,8 +58,15 @@ def show(model, tel, file_name, parameters):
     :param parameters: parmater for transition system (afreq, sfreq)
     :return:
     '''
+
+    tel_flag = False
+    if isinstance(tel[0][0], tel_event):
+        tel_flag = True
+
+
+
     if model in ['ts', 'sbr']:
-        if isinstance(tel[0][0], tel_event):
+        if tel_flag:
             output_file_path = os.path.join("static", "images", file_name[:file_name.find('.')] + '_' + model + '_' +
                                          str(parameters['afreq_thresh']) + '_' + str(parameters['sfreq_thresh'])+".png")
         else:
@@ -70,7 +79,7 @@ def show(model, tel, file_name, parameters):
         max_afreq = 0
         max_sfreq = 0
 
-        if isinstance(tel[0][0], tel_event):
+        if tel_flag:
             for trans in auto.transitions:
                 max_afreq = max(max_afreq, trans.afreq)
             for state in auto.states:
@@ -92,7 +101,7 @@ def show(model, tel, file_name, parameters):
             result = evaluation(net, im, fm, tel)
 
     else:
-        if isinstance(tel[0][0], tel_event):
+        if tel_flag:
             output_file_path = os.path.join("static", "images", file_name[:file_name.find('.')] + '_' + model + '_' + ".png")
         else:
             output_file_path = os.path.join("static", "images", "2"+
@@ -100,18 +109,26 @@ def show(model, tel, file_name, parameters):
 
         if model == 'alpha':
             net, im, fm = alpha_miner.apply(tel)
-        else:
-            net, im, fm = inductive_miner.apply(tel)
+            gviz = petri_vis_factory.apply(net, im, fm)
+            petri_vis_factory.save(gviz, output_file_path)
+            result = evaluation(net, im, fm, tel)
 
-        gviz = petri_vis_factory.apply(net, im, fm)
-        petri_vis_factory.save(gviz, output_file_path)
+        else:
+            dfg = dfg_factory.apply(tel)
+            if tel_flag:
+                dfg_tel = inductive_revise.get_dfg_graph_trans(tel)
+                dfg = dfg_tel + dfg
+
+            gviz = dfg_vis_factory.apply(dfg, log=tel)
+            dfg_vis_factory.save(gviz, output_file_path)
+            result = None
 
         #chaged
         # input_file_path = os.path.join("input_data", "running_alpha_1000_tel.xes")
         # logg = xes_importer.apply(input_file_path)
         # result = evaluation(net, im, fm, logg)
         #changed
-        result = evaluation(net, im, fm, tel)
+
         max_thresh = None
 
     return output_file_path, result, max_thresh
