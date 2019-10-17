@@ -19,6 +19,7 @@ function updateparam(name, val) {
         }
 
 </script>
+<div>
     <div style="margin-bottom: 30px;"> <!-- show statistics for model-->
         {% set img_name = img_file_path[:-3].split('\\') %}
         {% set name = img_name[2].split('_') %}
@@ -88,7 +89,7 @@ function updateparam(name, val) {
             </script>
         </div>
     </div>
-    {%if ((result is none) or (option.model == 'sbr'))%}
+    {% if option.model in ['sbr', 'ts'] %}
         <div class = "row">
                 <div class = "col"> <!-- option for translucent event log -->
                     <div class = "container" style="padding-bottom:10px;"> <!-- options for transition system -->
@@ -160,16 +161,16 @@ function updateparam(name, val) {
                                             Normal Event Log Parameter
                                         </div>
                                         <div class = "modal-body">
-                                            <div>
+                                            <div class = "form-group">
                                                 window size
-                                                <div class = "row">
+                                                <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
                                                 <input type = "number" id = "window" name="PARAM_KEY_WINDOW" value = {{parameters_2.get('window')}}
                                                        onchange="updateparam(this.name, this.value);">
                                                 </div>
                                             </div>
                                             <div>
                                                 view
-                                                <div class = "row">
+                                                <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
                                                     <select class="browser-default custom-select" name = "PARAM_KEY_VIEW" value={{parameters_2.get('view')}}>
                                                         <option value="sequence" label="sequence"></option>
                                                         <option value = "set" label="set"></option>
@@ -179,7 +180,7 @@ function updateparam(name, val) {
                                             </div>
                                             <div>
                                                 direction
-                                                <div class = "row">
+                                                <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
                                                     <select class="browser-default custom-select" name = "PARAM_KEY_DIRECTION" value={{parameters_2.get('direction')}}>
                                                         <option value = 'forward' label="forward"></option>
                                                         <option value = "backward" label="backward"></option>
@@ -208,7 +209,7 @@ function updateparam(name, val) {
         </div>
 
     {% endif %}
-    <div class = "row">
+    <div class = "row"> <!-- quality measure -->
         <div class = "col">
             {%if result is not none%}
              <table class = "table" width = 200px>
@@ -259,5 +260,7 @@ function updateparam(name, val) {
 
 
 </div>
+</div>
+
 
 {% endblock %}

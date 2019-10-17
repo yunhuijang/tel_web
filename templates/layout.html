@@ -13,6 +13,7 @@
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.panzoom.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mousewheel.js') }}"></script>
+
     {% if title %}
       <title>Translucent Event Log - {{ title }}</title>
     {% else %}
@@ -62,6 +63,7 @@
       </nav>
     </header>
     <main style="margin_top:20px" id = 'layout' role="main">
+      <div id="loading"></div>
     <!-- Main content block -->
     {% block content %}{% endblock %}
     </main>

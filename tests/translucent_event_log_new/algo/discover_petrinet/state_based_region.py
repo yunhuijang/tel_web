@@ -218,7 +218,7 @@ def sum_digit(num):
     return num % 10 + sum_digit(num/10)
 
 
-def split_labels(auto, e):
+def    split_labels(auto, e):
     '''
     split labels for event e
 
@@ -479,8 +479,8 @@ def petri_net_synthesis(auto):
                 newauto = split_labels(auto, e)
                 split = True
 
-    sol_cand = irredundant_place_cand(newauto)
-    sol = find_irredundant_cover(sol_cand)
+    # sol_cand = irredundant_place_cand(newauto)
+    # sol = find_irredundant_cover(sol_cand)
 
 
     region_set = set()

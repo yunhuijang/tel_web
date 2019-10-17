@@ -7,13 +7,16 @@ from pm4py.algo.discovery.transition_system.parameters import *
 
 app = Flask(__name__)
 
+
 @app.errorhandler(500)
 def wrong_log_type(e):
     return render_template("500.html"), 500
 
+
 @app.route('/')
 def file_upload():
     return render_template('file_upload.html', title = "import")
+
 
 @app.route('/success', methods=['POST'])
 def success():
@@ -22,6 +25,7 @@ def success():
         f.save('input_data/' + f.filename)
         return render_template('success.html', title = "success")
 
+
 @app.route('/show model', methods = ['GET', 'POST'])
 def show_import():
     path = "input_data"
@@ -29,12 +33,14 @@ def show_import():
     file_list.sort()
     return render_template('import.html', title = "show" ,files = file_list)
 
+
 @app.route('/compare model', methods = ['GET', 'POST'])
 def comp_import():
     path = "input_data"
     file_list = os.listdir(path)
     file_list.sort()
     return render_template('import.html', title = "compare", files = file_list)
+
 
 @app.route('/show', methods = ['POST'])
 def show():
@@ -62,6 +68,7 @@ def show():
 
     return render_template('show.html', img_file_path = '../' + img_file_path, result = result, stat = stat, option=option,
                            parameters= parameters, max_thresh = max_thresh)
+
 
 @app.route('/compare', methods = ['POST'])
 def compare():
@@ -95,10 +102,12 @@ def compare():
     return render_template('compare.html', img_file_path = img_file_path, img_file_path_2 = img_file_path_2,
                            option = option, parameters_2 = parameters_2, parameters = parameters, result = result, result_2 = result_2, max_thresh = max_thresh, stat = stat)
 
+
 # No cacheing at all for API endpoints.
 @app.after_request
 def add_header(response):
     response.headers['Cache-Control'] = 'public, max-age=0'
     return response
+
 
 app.run()

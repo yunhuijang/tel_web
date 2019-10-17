@@ -9,6 +9,7 @@ from pm4py.visualization.petrinet import factory as petri_vis_factory
 from pm4py.evaluation import factory as evaluation_factory
 from pm4py.statistics.traces.log import case_statistics
 from pm4py.algo.discovery.transition_system.parameters import *
+from pm4py.objects.log.importer.xes import factory as xes_importer
 
 def evaluation(net, im, fm, log):
     '''
@@ -78,9 +79,12 @@ def show(model, tel, file_name, parameters):
         max_thresh['sfreq'] = max_sfreq
 
         if model == 'ts':
+            result = {}
             gviz = vis_factory.apply(auto)
             vis_factory.save(gviz, output_file_path)
-            result = None
+            result['num of transitions'] = len(auto.transitions)
+            result['num of states'] = len(auto.states)
+
         else:
             net, im, fm = sb.petri_net_synthesis(auto)
             gviz = petri_vis_factory.apply(net, im, fm)
@@ -101,6 +105,12 @@ def show(model, tel, file_name, parameters):
 
         gviz = petri_vis_factory.apply(net, im, fm)
         petri_vis_factory.save(gviz, output_file_path)
+
+        #chaged
+        # input_file_path = os.path.join("input_data", "running_alpha_1000_tel.xes")
+        # logg = xes_importer.apply(input_file_path)
+        # result = evaluation(net, im, fm, logg)
+        #changed
         result = evaluation(net, im, fm, tel)
         max_thresh = None
 

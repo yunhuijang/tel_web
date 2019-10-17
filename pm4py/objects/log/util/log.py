@@ -2,7 +2,7 @@ from pm4py.objects.log.util import xes as xes_util
 from pm4py.objects.log import log
 
 
-# TODO: we can do some instance checking and then support both trace level and event level logs..
+# TODO: we can do some instance checking and then support both trace level and event level df_complete_logs..
 def get_event_labels(event_log, key):
     """
     Fetches the labels present in a log, given a key to use within the events.

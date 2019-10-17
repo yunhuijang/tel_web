@@ -41,13 +41,13 @@ def trans_alpha(log, parameters=None):
         post_act = rel[1]
         for trace in log:
             for i in range(len(trace)-1):
-                    if trace[i]['concept:name'] == pre_act and trace[i+1]['concept:name'] == post_act:
-                        pre_en = trace[i]['enabled']
-                        #todo: alpha miner changed (for all traces, condition o -> make it loop)
-                        if post_act in pre_en: #not loop
-                            not_loop_flag = True
-                        else: #loop
-                            pass
+                if trace[i]['concept:name'] == pre_act and trace[i+1]['concept:name'] == post_act:
+                    pre_en = trace[i]['enabled']
+                    #todo: alpha miner changed (for all traces, condition o -> make it loop)
+                    if post_act in pre_en: #not loop
+                        not_loop_flag = True
+                    else: #loop
+                        pass
         if not not_loop_flag:
             loop_set.add((pre_act, post_act))
 
@@ -59,9 +59,8 @@ def trans_alpha(log, parameters=None):
             t2 = pairs[j]
             if t1 != t2:
                 if t1[0].issubset(t2[0]) or t1[1].issubset(t2[1]):
-                    if not (classic.__check_is_unrelated(alpha_abstraction.parallel_relation, alpha_abstraction.causal_relation,
-                                                 t1[0], t2[0]) or classic.__check_is_unrelated(
-                        alpha_abstraction.parallel_relation, alpha_abstraction.causal_relation, t1[1], t2[1])):
+                    if not (classic.__check_is_unrelated(alpha_abstraction.parallel_relation, alpha_abstraction.causal_relation,t1[0], t2[0])
+                            or classic.__check_is_unrelated(alpha_abstraction.parallel_relation, alpha_abstraction.causal_relation, t1[1], t2[1])):
                         new_alpha_pair = (t1[0] | t2[0], t1[1] | t2[1])
                         if new_alpha_pair not in pairs:
                             pairs.append((t1[0] | t2[0], t1[1] | t2[1]))

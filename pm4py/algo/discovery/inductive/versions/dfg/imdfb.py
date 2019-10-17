@@ -1,4 +1,5 @@
 import sys
+import pandas as pd
 from collections import Counter
 from pm4py import util as pmutil
 from pm4py.algo.discovery.dfg.versions import native as dfg_inst
@@ -48,13 +49,19 @@ def apply(log, parameters):
         parameters[pmutil.constants.PARAMETER_CONSTANT_ATTRIBUTE_KEY] = parameters[
             pmutil.constants.PARAMETER_CONSTANT_ACTIVITY_KEY]
     activity_key = parameters[pmutil.constants.PARAMETER_CONSTANT_ACTIVITY_KEY]
-    # apply the reduction by default only on very small logs
+    # apply the reduction by default only on very small df_complete_logs
     enable_reduction = parameters["enable_reduction"] if "enable_reduction" in parameters else True
 
     # get the DFG
     if isinstance(log[0][0], tel.Event):
-        dfg = [(k, v) for k, v in inductive_revise.get_dfg_graph_trans(log, parameters={
-            pmutil.constants.PARAMETER_CONSTANT_ACTIVITY_KEY: activity_key}).items() if v > 0]
+        dfg_tel = inductive_revise.get_dfg_graph_trans(log, parameters={
+            pmutil.constants.PARAMETER_CONSTANT_ACTIVITY_KEY: activity_key})
+        dfg_norm = dfg_inst.apply(log, parameters={
+            pmutil.constants.PARAMETER_CONSTANT_ACTIVITY_KEY: activity_key})
+
+        dfg_coun = dfg_norm + dfg_tel
+        dfg = [(k, v) for k, v in dfg_coun.items() if v > 0]
+
     else:
         dfg = [(k, v) for k, v in dfg_inst.apply(log, parameters={
             pmutil.constants.PARAMETER_CONSTANT_ACTIVITY_KEY: activity_key}).items() if v > 0]

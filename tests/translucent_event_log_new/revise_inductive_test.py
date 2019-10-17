@@ -1,20 +1,35 @@
 
 from pm4py.algo.discovery.inductive import factory as inductive_miner
 from pm4py.objects.log.importer.xes import factory as xes_importer
-from pm4py.visualization.process_tree import factory as vis_factory
-from tests.translucent_event_log.objects.tel.importer.xes.iterparse_tel import import_tel
 import os
 from tests.translucent_event_log_new.objects.tel.utils import tel_set_enabled
+from tests.translucent_event_log_new.objects.tel.importer.xes import iterparse_tel
+from tests.translucent_event_log_new.objects.tel.utils import tel_set_enabled
+from pm4py.objects.log.util import sampling
+from pm4py.evaluation import factory as evaluation_factory
+from pm4py.objects.log.exporter.xes import factory as xes_exporter
 
+#make sample df_complete_logs
+input_file_path = os.path.join("input_data", "test_logs", "Sepsis_tel.xes")
+test_log = xes_importer.apply(input_file_path)
 
-input_file_path = os.path.join("input_data","test_logs",  "running_100_remove_10_tel.xes")
-log = import_tel(input_file_path)
-tel = tel_set_enabled(log)
-logg = xes_importer.apply(input_file_path)
-nett = inductive_miner.apply_tree(tel)
-net = inductive_miner.apply_tree(logg)
+for j in [3,5,10]:
+    for i in range(10):
+        sample_log = sampling.sample(test_log, n=j)
+        path = os.path.join("input_data", "test_logs", "Sepsis_%d_tel_%d" %(j, i))
+        xes_exporter.apply(sample_log, path)
 
-gviz = vis_factory.apply(nett)
-vis_factory.view(gviz)
-gviz = vis_factory.apply(net)
-vis_factory.view(gviz)
+for j in [3,5,10]:
+    print(j)
+    for i in range(10):
+        file = os.path.join("input_data", "test_logs", "Sepsis_%d_tel_%d" %(j, i))
+        log = xes_importer.apply(file)
+        tel = iterparse_tel.import_tel(file)
+        tel = tel_set_enabled(tel)
+        net, im, fm = inductive_miner.apply(log)
+        nett, imm, fmm = inductive_miner.apply(tel)
+        result_log = evaluation_factory.apply(test_log, net, im, fm)
+        result_tel = evaluation_factory.apply(test_log, nett, imm, fmm)
+        print(result_log)
+        print(result_tel)
+        print(" ")

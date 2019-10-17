@@ -52,9 +52,9 @@ def get_log_traces_to_activities(log, activities, parameters=None):
     Returns
     -------------
     list_logs
-        List of event logs taking to the first occurrence of each activity
+        List of event df_complete_logs taking to the first occurrence of each activity
     considered_activities
-        All activities that are effectively have been inserted in the list of logs (in some of them, the resulting log
+        All activities that are effectively have been inserted in the list of df_complete_logs (in some of them, the resulting log
         may be empty)
     """
     if parameters is None:

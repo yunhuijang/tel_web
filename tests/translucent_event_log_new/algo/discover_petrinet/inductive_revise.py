@@ -2,6 +2,7 @@ from collections import Counter
 
 from pm4py import util as pmutil
 from pm4py.objects.log.util import xes as xes_util
+import html
 
 
 def get_dfg_graph_trans(log, parameters = None):
@@ -15,6 +16,7 @@ def get_dfg_graph_trans(log, parameters = None):
     for trace in log:
         for i in range(len(trace)-1):
             en_set = trace[i+1]['enabled']
+            en_set = set(html.unescape(en_set))
             for en in en_set:
                 en_new = en.replace("'","")
                 if en_new[0] == " ":
