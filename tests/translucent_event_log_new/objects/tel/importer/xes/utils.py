@@ -124,12 +124,12 @@ def set_enabled(tel, and_window = 1):
             ss = set()
             act = event['concept:name']
 
-
             if event_index > 0:
                 try:
-                    for k in in_[act]:
-                            if k.issubset(input[event_index-1]): # current activity's input condition is subset of last input
-                                input[event_index-1] = input[event_index-1] - k
+                    for k in sorted(in_[act]):
+                        if k.issubset(input[event_index-1]): # current activity's input condition is subset of last input
+                            input[event_index-1] = input[event_index-1] - k
+                            break
                 except KeyError:
                     pass
 

@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="Chaged options for normal event log&#10;&#10;- removed afreq, sfreq option in normal event log transition system&#10;- added window, view, direction option in normal event log transition system">
+    <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/import.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/import.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/running-example_tel.xes" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/running-example_tel.xes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/revise_inductive_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/revise_inductive_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,29 +21,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>browser-default custom-select</find>
-      <find>ect</find>
-      <find>browser-</find>
-      <find>mdb</find>
-      <find>custom-range</find>
-      <find>focal</find>
-      <find>inductive_revise</find>
-      <find>trans_alpha</find>
-      <find>pair</find>
-      <find>remove_set</find>
-      <find>afreq</find>
-      <find>trans_factory</find>
-      <find>show_afreq</find>
-      <find>custom</find>
-      <find>tsoption</find>
-      <find>file_type</find>
-      <find>option</find>
-      <find>import_tel</find>
-      <find>get_start_activities</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,29 +63,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
-    <configuration name="df_completeness_other (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tel_web" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\df_completeness_other.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="df_completeness_other (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.df_completeness">
+    <configuration name="df_completeness" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tel_web" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -122,28 +76,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness_other.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="df_completeness_other" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tel_web" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/translucent_event_log_new" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\df_completeness_alpha.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,20 +127,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="revise_inductive_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tel_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/translucent_event_log_new" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/translucent_event_log_new/revise_inductive_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tel_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.df_completeness_other" />
-      <item itemvalue="Python.df_completeness_other (1)" />
-      <item itemvalue="Python.df_completeness_other (2)" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.heruistics_test" />
+      <item itemvalue="Python.df_completeness" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.revise_inductive_test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.df_completeness_other (2)" />
+        <item itemvalue="Python.df_completeness" />
+        <item itemvalue="Python.revise_inductive_test" />
         <item itemvalue="Python.heruistics_test" />
-        <item itemvalue="Python.df_completeness_other (1)" />
-        <item itemvalue="Python.df_completeness_other" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571306223061</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Made loading page">
+      <created>1571313723657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571313723657</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -278,7 +260,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -291,7 +275,8 @@
     <MESSAGE value="Refactor&#10;&#10;- change navbar button&#10;- add afreq, sfreq to normal transition system&#10;- make transition system parameters applied to both (log, tel)&#10;- add error page" />
     <MESSAGE value="Chaged options for normal event log&#10;&#10;- removed afreq, sfreq option in normal event log transition system&#10;- added window, view, direction option in normal event log transition system" />
     <MESSAGE value="Revised some options (after test)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revised some options (after test)" />
+    <MESSAGE value="Made loading page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made loading page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -300,11 +285,6 @@
           <url>file://$PROJECT_DIR$/pm4py_source/tests/translucent_event_log_new/heruistics_test.py</url>
           <line>1</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="71" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pm4py/algo/discovery/inductive/versions/dfg/imdfb.py</url>
@@ -318,7 +298,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py</url>
-          <line>61</line>
+          <line>60</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -327,87 +307,27 @@
           <option name="timeStamp" value="99" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py</url>
-          <line>137</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>28</line>
           <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py</url>
+          <line>101</line>
+          <option name="timeStamp" value="109" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="111" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="in_[e]" language="Python" />
-        <watch expression="round(yes_dfg/num, 2)" language="Python" />
-        <watch expression="get_start_activities(log)" language="Python" />
-        <watch expression="get_start_activities(sampled_tel).keys()" language="Python" />
-        <watch expression="set(get_start_activities(sampled_tel).keys())" language="Python" />
-        <watch expression="tree_avg_tel" language="Python" />
+        <watch expression="input[event_index-1]" language="Python" />
+        <watch expression="in_[act]" language="Python" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="watch">
-      <expression>
-        <expression-string>tree_avg_tel</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>set(get_start_activities(sampled_tel).keys())</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>get_start_activities(sampled_tel).keys()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>get_start_activities(log)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>round(yes_dfg/num, 2)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>in_[e]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>r['fitness']</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>result['fitness']</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>request.form</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>parameters[PARAM_KEY_VIEW]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>__py_debug_temp_var_1572075521</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
 </project>

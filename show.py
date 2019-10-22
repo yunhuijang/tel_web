@@ -1,4 +1,5 @@
 import os
+import operator
 from tests.translucent_event_log_new.algo.discover_automaton import utils
 from pm4py.algo.discovery.alpha import factory as alpha_miner
 from tests.translucent_event_log_new.objects.tel.tel import Event as tel_event
@@ -117,11 +118,12 @@ def show(model, tel, file_name, parameters):
             dfg = dfg_factory.apply(tel)
             if tel_flag:
                 dfg_tel = inductive_revise.get_dfg_graph_trans(tel)
-                dfg = dfg_tel + dfg
+                #dfg = dfg_tel + dfg
+                dfg = dfg_tel
 
             gviz = dfg_vis_factory.apply(dfg, log=tel)
             dfg_vis_factory.save(gviz, output_file_path)
-            result = None
+            result = dict(sorted(dfg.items(), key = operator.itemgetter(1), reverse=True))
 
         #chaged
         # input_file_path = os.path.join("input_data", "running_alpha_1000_tel.xes")
