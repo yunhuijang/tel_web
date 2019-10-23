@@ -136,17 +136,11 @@ class TransitionSystem(ts.TransitionSystem):
                     if trans == t:
                         trans_set.add(trans)
 
-        self.transitions = set()
-        self.states = set()
-
         for s in states_set:
             self.states.add(s)
         for t in trans_set:
             self.transitions.add(t)
             utils.add_arc_from_to(t.name, t.from_state, t.to_state, self)
-
-
-
 
 
 

@@ -2,415 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/input_data/Sepsis_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/cpnToolsSimulationLog.mxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/r_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_10_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_3_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input_data/road_heu_5_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/playout/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/playout/data_structures/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/playout/factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/playout/versions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/playout/versions/basic_playout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/versions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/versions/basic.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/algo/simulation/tree_generator/versions/ptandloggenerator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/objects/process_tree/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/objects/process_tree/process_tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/objects/process_tree/pt_operator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/objects/process_tree/semantics.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/objects/process_tree/state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pm4py/objects/process_tree/util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/Ellipsis-1s-200px.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/Sepsis_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/r_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/r_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/r_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_10_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_30_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_30_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_30_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_3_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/road_heu_5_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/roadtraffic.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/roadtraffic1000traces.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/roadtraffic100traces_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_alpha_1000_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_10_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_3_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_heu_5_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_10_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_3_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/running_sim_5_tel_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/sep_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/sep_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_input/sep_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness_alpha.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness_other.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/Sepsis.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/Sepsis_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/10_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/1_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/2_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/3_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/4_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/5_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/6_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/7_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/8_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/9_1000_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/10_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/1_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/2_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/3_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/4_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/5_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/6_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/7_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/8_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_1.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_2.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_3.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_4.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_7.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_8.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/df_complete_logs/df_complete_alpha/9_alpha_9.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/road_heu_5_tel_6.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/100.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/1000.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/100_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/100_tel_10.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/100_tel_15.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/100_tel_20.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/100_tel_5.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_10_tel_9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_3_tel_9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_5_tel_9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/Sepsis_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/roadtraffic.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/input_data/test_logs/roadtraffic_tel.xes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tel_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tel_web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/Hospital_log.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10000_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10000_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_1000_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_1000_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_100_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_100_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/roadtraffic100traces_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise10_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise10_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise20_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise30_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise40_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise50_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise60_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise90_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_15.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_15_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_20.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_20_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_5.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_5_tel_sa.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_heu_10_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_heu_15_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_data/running_heu_5_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/show.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-216324583">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="143" selection-start-line="143" selection-end-line="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../anaconda/Lib/site-packages/flask/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40716">
+              <caret line="2291" selection-start-line="2291" selection-end-line="2291" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_automaton/utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3402">
+              <caret line="193" column="7" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -420,33 +115,91 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>8_tel</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="211" />
+    <option name="y" value="5" />
+    <option name="width" value="1649" />
+    <option name="height" value="1033" />
   </component>
   <component name="ProjectId" id="1SKBOnYuzJBNwvqZMny5cAYVlQl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
+              <item name="input_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
+              <item name="pm4py" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="translucent_event_log_new" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\js" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs\df_complete_alpha" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\uni5510\programming\tel_web\tel_web" />
+      <recent name="C:\Users\uni5510\programming\tel_web\tel_web\tests\translucent_event_log_new" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -461,7 +214,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.df_completeness">
+  <component name="RunManager" selected="Python.main">
     <configuration name="df_completeness" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tel_web" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -576,11 +329,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.df_completeness" />
         <item itemvalue="Python.revise_inductive_test" />
         <item itemvalue="Python.heruistics_test" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -656,6 +409,28 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
+  <component name="ToolWindowManager">
+    <frame x="169" y="4" width="1319" height="826" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3572543" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988864" visible="true" weight="0.4349711" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.25931233" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011136" side_tool="true" weight="0.31661892" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
@@ -666,12 +441,21 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="before zoom" />
@@ -703,16 +487,6 @@
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py</url>
-          <line>60</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>28</line>
           <option name="timeStamp" value="106" />
@@ -735,5 +509,53 @@
         <watch expression="in_[act]" language="Python" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/show.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_data/10_1000_8.xes" />
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../anaconda/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40716">
+          <caret line="2291" selection-start-line="2291" selection-end-line="2291" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_automaton/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3402">
+          <caret line="193" column="7" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

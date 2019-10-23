@@ -64,8 +64,6 @@ def show(model, tel, file_name, parameters):
     if isinstance(tel[0][0], tel_event):
         tel_flag = True
 
-
-
     if model in ['ts', 'sbr']:
         if tel_flag:
             output_file_path = os.path.join("static", "images", file_name[:file_name.find('.')] + '_' + model + '_' +
