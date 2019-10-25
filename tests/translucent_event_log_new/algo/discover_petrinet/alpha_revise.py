@@ -46,8 +46,10 @@ def trans_alpha(log, parameters=None):
                     #todo: alpha miner changed (for all traces, condition o -> make it loop)
                     if post_act in pre_en: #not loop
                         not_loop_flag = True
+                        break
                     else: #loop
-                        pass
+                        continue
+            break
         if not not_loop_flag:
             loop_set.add((pre_act, post_act))
 

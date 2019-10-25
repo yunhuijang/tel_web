@@ -71,7 +71,6 @@ def show(model, tel, file_name, parameters):
         else:
             output_file_path = os.path.join("static", "images", "2" + "_" +  file_name[:file_name.find('.')] + '_' + model + '_' +
                                          str(parameters[PARAM_KEY_DIRECTION]) + '_' + str(parameters[PARAM_KEY_WINDOW])+ "_" + str(parameters[PARAM_KEY_VIEW]) + ".png")
-
         auto = utils.discover_annotated_automaton(tel, parameters=parameters)
 
         max_thresh = {}

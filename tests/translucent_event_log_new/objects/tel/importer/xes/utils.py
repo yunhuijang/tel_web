@@ -23,7 +23,7 @@ def and_set(log, window = 1):
 
     return and_dict
 
-def find_input_output(log, timewindow = 4, parameters = None):
+def find_input(log, timewindow = 4, parameters = None):
     '''
     Finds input binding and output binding for each activity
 
@@ -31,62 +31,40 @@ def find_input_output(log, timewindow = 4, parameters = None):
     :param timewindow: size for binding (default = 4)
     :param parameters: parameter for heuristic miner (same with heuristic miner's parameters)
 
-    :return: input_dict, output_dict (dictionary for input binding and output binding for each activity)
+    :return: input_dict, (dictionary for input binding for each activity)
     '''
     heu_net = heuristics_miner.apply_heu(log, parameters)
-    # gviz = hn_vis_factory.apply(heu_net)
-    # hn_vis_factory.view(gviz)
 
     input_cand = {}
-    output_cand = {}
 
     for act, values in heu_net.nodes.items():
         input_cand[act] = set()
-        output_cand[act] = set()
         for t in values.input_connections:
             input_cand[act].add(t.node_name)
-        for t in values.output_connections:
-            output_cand[act].add(t.node_name)
 
     input_dict = {}
-    output_dict = {}
-    input_exact = {}
-    output_exact = {}
-
-    for trace in log:
-        case_id = trace.attributes['concept:name']
-        output_exact[case_id] = []
-        input_exact[case_id] = []
-        for i in range(len(trace)):
-            output_exact[case_id].append(set())
-            input_exact[case_id].append(set())
 
     for act in heu_net.nodes:
         input_dict[act] = set()
-        output_dict[act] = set()
 
     for act in input_cand:
         input = set()
-        output = set()
         for trace in log:
-            case_id = trace.attributes['concept:name']
             for event_index, event in enumerate(trace):
                 if event["concept:name"] == act:
                     index = event_index
-                    for ev in trace[index + 1:index + timewindow + 1]:
-                        if ev["concept:name"] in output_cand[act]:
-                            output.add(ev["concept:name"])
-                    output_exact[case_id][event_index] = output
-                    output_dict[act].add(frozenset(output))
-                    output = set()
                     for ev in trace[max(index - timewindow, 0):index]:
                         if ev["concept:name"] in input_cand[act]:
                             input.add(ev["concept:name"])
-                    input_exact[case_id][event_index] = input
-                    input_dict[act].add(frozenset(input))
+                    if len(input) > 0:
+                        input_dict[act].add(frozenset(input))
                     input = set()
 
-    return input_dict, output_dict, input_exact, output_exact
+    for key, value in input_dict.items():
+        if key in heu_net.start_activities[0].keys():
+            value.add(frozenset())
+
+    return input_dict
 
 
 def set_enabled(tel, and_window = 1):
@@ -98,8 +76,8 @@ def set_enabled(tel, and_window = 1):
     '''
 
 
-    in_, _, _, output_ex = utils.find_input_output(tel)
-    and_dict = and_set(tel, and_window)
+    in_ = utils.find_input(tel)
+    and_dict = and_set(tel, and_window) #and: can happen together (not concurrent)
 
     start_act = set()
     for trace in tel:
@@ -117,7 +95,7 @@ def set_enabled(tel, and_window = 1):
         left = []
         input = []
         output = []
-        en.append(start_act) #first' activity's enabled: start_act list
+        en.append(frozenset(start_act)) #first' activity's enabled: start_act list
 
         for event_index, event in enumerate(trace):
             event['enabled'] = en[event_index]
@@ -127,7 +105,7 @@ def set_enabled(tel, and_window = 1):
             if event_index > 0:
                 try:
                     for k in sorted(in_[act]):
-                        if k.issubset(input[event_index-1]): # current activity's input condition is subset of last input
+                        if len(k) > 0 and k.issubset(input[event_index-1]): # current activity's input condition is subset of last input
                             input[event_index-1] = input[event_index-1] - k
                             break
                 except KeyError:
@@ -148,8 +126,7 @@ def set_enabled(tel, and_window = 1):
 
             remove_set = set()
             for s in left_set:
-
-                if s not in and_:
+                if s not in and_: #concurrent activity (cannot happen together)
                     remove_set.add(s)
 
             # parallel = set()

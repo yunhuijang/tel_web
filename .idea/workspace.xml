@@ -2,110 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/multiset_error.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tel_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tel_web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/Hospital_log.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10000_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10000_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_1000_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_1000_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_100_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_100_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/road_ind_10_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/roadtraffic100traces_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise10_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise10_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise20_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise30_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise40_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise50_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise60_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_100_noise90_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_15.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_15_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_20.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_20_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_5.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_alpha_5_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_heu_10_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_heu_15_tel.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/running_heu_5_tel.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pm4py/algo/discovery/transition_system/versions/view_based.py" beforeDir="false" afterPath="$PROJECT_DIR$/pm4py/algo/discovery/transition_system/versions/view_based.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compare.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/heruistics_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/heruistics_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-216324583">
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="py" value="45" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Python" value="45" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="143" selection-start-line="143" selection-end-line="143" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../anaconda/Lib/site-packages/flask/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40716">
-              <caret line="2291" selection-start-line="2291" selection-end-line="2291" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_automaton/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3402">
-              <caret line="193" column="7" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -115,84 +32,26 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>8_tel</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="211" />
-    <option name="y" value="5" />
-    <option name="width" value="1649" />
-    <option name="height" value="1033" />
   </component>
   <component name="ProjectId" id="1SKBOnYuzJBNwvqZMny5cAYVlQl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
-              <item name="input_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
-              <item name="pm4py" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tel_web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tel_web" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="translucent_event_log_new" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/translucent_event_log_new/input_data" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs\df_complete_alpha" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\uni5510\programming\tel_web\tel_web" />
@@ -215,27 +74,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="df_completeness" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tel_web" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/translucent_event_log_new" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="heruistics_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tel_web" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -278,28 +116,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="revise_inductive_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tel_web" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/translucent_event_log_new" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/translucent_event_log_new/revise_inductive_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tel_web" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,22 +137,74 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tel_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tel_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\yunhui\PycharmProjects\tel_web\tests\multiset_error.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.heruistics_test" />
-      <item itemvalue="Python.df_completeness" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.revise_inductive_test" />
+      <item itemvalue="Python.test (1)" />
+      <item itemvalue="Python.test (2)" />
+      <item itemvalue="Python.heruistics_test" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.df_completeness" />
-        <item itemvalue="Python.revise_inductive_test" />
         <item itemvalue="Python.heruistics_test" />
+        <item itemvalue="Python.test (2)" />
+        <item itemvalue="Python.test (1)" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -409,28 +278,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="169" y="4" width="1319" height="826" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3572543" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988864" visible="true" weight="0.4349711" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25931233" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011136" side_tool="true" weight="0.31661892" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
@@ -441,21 +288,12 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="before zoom" />
@@ -482,24 +320,19 @@
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/heruistics_test.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main.py</url>
           <line>28</line>
           <option name="timeStamp" value="106" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="109" />
+          <url>file://$PROJECT_DIR$/tests/multiset_error.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py</url>
-          <line>128</line>
-          <option name="timeStamp" value="111" />
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="134" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -509,53 +342,5 @@
         <watch expression="in_[act]" language="Python" />
       </configuration>
     </watches-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/show.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/df_completeness.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/input_data/10_1000_8.xes" />
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../anaconda/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40716">
-          <caret line="2291" selection-start-line="2291" selection-end-line="2291" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_automaton/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3402">
-          <caret line="193" column="7" selection-start-line="193" selection-start-column="7" selection-end-line="193" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

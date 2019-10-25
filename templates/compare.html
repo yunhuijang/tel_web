@@ -19,7 +19,18 @@ function updateparam(name, val) {
         }
 
 </script>
+<script type="text/javascript">
+function getPar()
+{
+    var param1 = '{{parameters_2.get('view')}}';
+    var param2 = '{{parameters_2.get('direction')}}';
+    document.getElementById(param1).selected = "selected";
+    document.getElementById(param2).selected = "selected";
+}
+</script>
+
 <div>
+
     <div style="margin-bottom: 30px;"> <!-- show statistics for model-->
         {% set img_name = img_file_path[:-3].split('\\') %}
         {% set name = img_name[2].split('_') %}
@@ -29,7 +40,8 @@ function updateparam(name, val) {
             <mark>{{key}}</mark> : {{value}}
         {% endfor %}
     </div>
-<div class = "container" >
+<div class = "container">
+
     <div class = "row">
         <div class = "col">
             <center>
@@ -148,64 +160,64 @@ function updateparam(name, val) {
                         </form>
                     </div>
                 </div>
-            <div class = "col"> <!-- option for normal event log -->
-                <div class = "container" style="padding-bottom:10px;"> <!-- options for transition system -->
-                        <form action = "/compare" method = "post" enctype="multipart/form-data">
-                            <button type="button" class = "btn btn-primary" data-toggle="modal" data-target="#tsoption_2" style="display:block; margin:0 auto;">
-                                Change Option
-                            </button>
-                            <div class = "modal fade" id = "tsoption_2" >
-                                <div class = "modal-dialog">
-                                    <div class = "modal-content">
-                                        <div class = "modal-header">
-                                            Normal Event Log Parameter
-                                        </div>
-                                        <div class = "modal-body">
-                                            <div class = "form-group">
-                                                window size
-                                                <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
-                                                <input type = "number" id = "window" name="PARAM_KEY_WINDOW" value = {{parameters_2.get('window')}}
-                                                       onchange="updateparam(this.name, this.value);">
+                <div class = "col"> <!-- option for normal event log -->
+                    <div class = "container" style="padding-bottom:10px;"> <!-- options for transition system -->
+                            <form action = "/compare" method = "post" enctype="multipart/form-data">
+                                <button type="button" class = "btn btn-primary" data-toggle="modal" data-target="#tsoption_2" style="display:block; margin:0 auto;">
+                                    Change Option
+                                </button>
+                                <div class = "modal fade" id = "tsoption_2" >
+                                    <div class = "modal-dialog">
+                                        <div class = "modal-content">
+                                            <div class = "modal-header">
+                                                Normal Event Log Parameter
+                                            </div>
+                                            <div class = "modal-body">
+                                                <div class = "form-group">
+                                                    window size
+                                                    <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
+                                                    <input type = "number" id = "window" name="PARAM_KEY_WINDOW" value = {{parameters_2.get('window')}}>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div>
-                                                view
-                                                <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
-                                                    <select class="browser-default custom-select" name = "PARAM_KEY_VIEW" value={{parameters_2.get('view')}}>
-                                                        <option value="sequence" label="sequence"></option>
-                                                        <option value = "set" label="set"></option>
-                                                        <option value = "multiset" label="multiset"></option>
-                                                    </select>
+                                                <div>
+                                                    view
+                                                    <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
+                                                        <select class="browser-default custom-select" id="view" name = "PARAM_KEY_VIEW">
+                                                            <option id = "sequence" value="sequence" label="sequence"></option>
+                                                            <option id = "set" value = "set" label="set"></option>
+                                                            <option id = "multiset" value = "multiset" label="multiset"></option>
+                                                        </select>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div>
-                                                direction
-                                                <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
-                                                    <select class="browser-default custom-select" name = "PARAM_KEY_DIRECTION" value={{parameters_2.get('direction')}}>
-                                                        <option value = 'forward' label="forward"></option>
-                                                        <option value = "backward" label="backward"></option>
-                                                    </select>
+                                                <div>
+                                                    direction
+                                                    <div class = "row" style = "margin-right:0px; margin-left:0px; margin-bottom:10px;">
+                                                        <select class="browser-default custom-select" id="direction" name = "PARAM_KEY_DIRECTION">
+                                                            <option id = "forward" value = 'forward' label="forward"></option>
+                                                            <option id = "backward"value = "backward" label="backward"></option>
+                                                        </select>
+                                                    </div>
                                                 </div>
+                                                <div>
+                                                {% for key, value in option.items() %}
+                                                <input type="hidden" name={{key}} value = {{value}}>
+                                                {% endfor %}
+                                                    <input type = "hidden" name = "afreq" value = {{parameters.get('afreq_thresh')}}>
+                                                    <input type = "hidden" name = "sfreq" value = {{parameters.get('sfreq_thresh')}}>
+                                                </div>
+                                                <script type = "text/javascript">
+                                                    getPar();
+                                                </script>
                                             </div>
-                                            <div>
-                                            {% for key, value in option.items() %}
-                                            <input type="hidden" name={{key}} value = {{value}}>
-                                            {% endfor %}
-                                                <input type = "hidden" name = "afreq" value = {{parameters.get('afreq_thresh')}}>
-                                                <input type = "hidden" name = "sfreq" value = {{parameters.get('sfreq_thresh')}}>
+                                            <div class= "modal-footer">
+                                                <input class = "btn btn-outline-info" type = "submit" value = "show">
                                             </div>
-                                        </div>
-                                        <div class= "modal-footer">
-                                            <input class = "btn btn-outline-info" type = "submit" value = "show">
                                         </div>
                                     </div>
                                 </div>
-
-                            </div>
-
-                        </form>
-                    </div>
-            </div>
+                            </form>
+                        </div>
+                </div>
         </div>
 
     {% endif %}

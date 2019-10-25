@@ -4,8 +4,9 @@ from pm4py.algo.discovery.transition_system.parameters import *
 from pm4py.objects.log import util as log_util
 from pm4py.objects.log.util.xes import DEFAULT_NAME_KEY
 from tests.translucent_event_log_new.objects.automaton import transition_system as ts
+from pm4py.objects.transition_system import transition_system as norm_ts
 from pm4py.util.constants import PARAMETER_CONSTANT_ACTIVITY_KEY
-
+from tests.translucent_event_log_new.objects.tel.tel import Event
 
 def apply(log, parameters=None):
     if parameters is None:
@@ -15,7 +16,10 @@ def apply(log, parameters=None):
             parameters[parameter] = DEFAULT_PARAMETERS[parameter]
     activity_key = parameters[
         PARAMETER_CONSTANT_ACTIVITY_KEY] if PARAMETER_CONSTANT_ACTIVITY_KEY in parameters else DEFAULT_NAME_KEY
-    transition_system = ts.TransitionSystem()
+    if isinstance(log[0][0], Event):
+        transition_system = ts.TransitionSystem()
+    else:
+        transition_system = norm_ts.TransitionSystem()
     control_flow_log = log_util.log.project_traces(log, activity_key)
     view_sequence = (list(map(lambda t: __compute_view_sequence(t, parameters), control_flow_log)))
     for vs in view_sequence:

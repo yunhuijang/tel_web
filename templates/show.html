@@ -11,13 +11,9 @@
 
 </style>
 <script>
-function updateafreq(val) {
-          document.getElementById('afreq').value=val;
+function updateparam(name, val) {
+          document.getElementById(name).value=val;
         }
-function updatesfreq(val)
-{
-    document.getElementById('sfreq').value=val;
-}
 
 </script>
 <div>
@@ -72,7 +68,7 @@ function updatesfreq(val)
                             <div class = "row">
                                 <div class = "col">
                                     <input type = "range" name="afreq" class="custom-range" min = "0" max = {{max_thresh['afreq']}}
-                                    value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateafreq(this.value);">
+                                    value = {{parameters.get('afreq_thresh')}} step = "1" onchange="updateparam(this.name, this.value);">
                                 </div>
                                 <div class = "col">
                                     <input type="text" class="freq" id="afreq" value={{parameters.get('afreq_thresh')}}>
@@ -84,7 +80,7 @@ function updatesfreq(val)
                                 <div class = "row">
                                     <div class = "col">
                                         <input type = "range" name="sfreq" class="custom-range" min = "0" max = {{max_thresh['sfreq']}}
-                                       value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updatesfreq(this.value);">
+                                       value = {{parameters.get('sfreq_thresh')}} step = "1"onchange="updateparam(this.name, this.value);">
                                     </div>
                                     <div class = "col">
                                          <input type="text" class = "freq" id="sfreq" value={{parameters.get('sfreq_thresh')}}>

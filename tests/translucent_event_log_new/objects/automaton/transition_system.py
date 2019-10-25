@@ -136,6 +136,9 @@ class TransitionSystem(ts.TransitionSystem):
                     if trans == t:
                         trans_set.add(trans)
 
+        self.states = set()
+        self.transitions = set()
+
         for s in states_set:
             self.states.add(s)
         for t in trans_set:
