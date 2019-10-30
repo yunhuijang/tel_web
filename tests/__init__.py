@@ -1,1 +1,0 @@
-from tests import translucent_event_log_new

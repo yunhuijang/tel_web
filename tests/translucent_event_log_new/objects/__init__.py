@@ -1,1 +1,0 @@
-from tests.translucent_event_log_new.objects import automaton, tel

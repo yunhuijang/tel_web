@@ -1,27 +1,29 @@
 import os
 import operator
-from tests.translucent_event_log_new.algo.discover_automaton import utils
 from pm4py.algo.discovery.alpha import factory as alpha_miner
-from tests.translucent_event_log_new.objects.tel.tel import Event as tel_event
-from tests.translucent_event_log_new.algo.discover_petrinet import state_based_region as sb
 from pm4py.visualization.transition_system import factory as vis_factory
 from pm4py.visualization.petrinet import factory as petri_vis_factory
 from pm4py.evaluation import factory as evaluation_factory
 from pm4py.statistics.traces.log import case_statistics
 from pm4py.algo.discovery.transition_system.parameters import *
-from tests.translucent_event_log_new.algo.discover_petrinet import inductive_revise
 from pm4py.algo.discovery.dfg import factory as dfg_factory
 from pm4py.visualization.dfg import factory as dfg_vis_factory
+from translucent_event_log.algo.discover_automaton import utils
+from translucent_event_log.objects.tel.tel import Event as tel_event
+from translucent_event_log.algo.discover_petrinet import state_based_region as sb
+from translucent_event_log.algo.discover_petrinet import inductive_revise
+from translucent_event_log.objects.tel.tel import Event
+from translucent_event_log.algo.discover_petrinet.alpha_revise import trans_alpha
 
 
 def evaluation(net, im, fm, log):
     '''
     calculate fitness, precision, simplicity, generalization for petri net
-    :param net:
-    :param im:
-    :param fm:
-    :param log:
-    :return:
+    :param net: petri net
+    :param im: initial marking of petri net
+    :param fm: final marking of petri net
+    :param log: event log that made petri net
+    :return: fitness, precision, generalization, simplicity, metricsAverage
     '''
     result = evaluation_factory.apply(log, net, im, fm)
     #to calculate alignment based fitness
@@ -53,7 +55,7 @@ def stat(log):
 def show(model, tel, file_name, parameters):
     '''
     Show model and its quality measures
-    :param model: model type (transition system, state based region, inductive miner, alpha miner)
+    :param model: model type (transition system, state based region, DFG miner, alpha miner)
     :param tel: input log
     :param file_name: img file name to show model
     :param parameters: parmater for transition system (afreq, sfreq)
@@ -106,7 +108,10 @@ def show(model, tel, file_name, parameters):
                                             file_name[:file_name.find('.')] + '_' + model + '_' + ".png")
 
         if model == 'alpha':
-            net, im, fm = alpha_miner.apply(tel)
+            if isinstance(tel[0][0], Event):
+                net, im, fm = trans_alpha(tel)
+            else:
+                net, im, fm = alpha_miner.apply(tel)
             gviz = petri_vis_factory.apply(net, im, fm)
             petri_vis_factory.save(gviz, output_file_path)
             result = evaluation(net, im, fm, tel)
@@ -122,12 +127,6 @@ def show(model, tel, file_name, parameters):
             dfg_vis_factory.save(gviz, output_file_path)
             result = dict(sorted(dfg.items(), key = operator.itemgetter(1), reverse=True))
 
-        #chaged
-        # input_file_path = os.path.join("input_data", "running_alpha_1000_tel.xes")
-        # logg = xes_importer.apply(input_file_path)
-        # result = evaluation(net, im, fm, logg)
-        #changed
-
         max_thresh = None
 
     return output_file_path, result, max_thresh
@@ -135,11 +134,16 @@ def show(model, tel, file_name, parameters):
 
 def show_model(model, tel, file_name, parameters):
     '''
-    Show one model (show model)
-    :param model:
-    :param tel:
-    :param file_name:
-    :return:
+    Show one process model (show model)
+    :param model: process model type (ts, sbr, alpha, induct)
+    :param tel: event log
+    :param file_name: event log file name
+    :parameter: parameters for process discovery
+    :returns:
+        output_file_path: process model image's file path
+        result: process evaluation result
+        max_thresh: maximum value for afreq, sfreq options
+        statis: statistics for event log (event source, model type, # of events, # of variants, # of traces)
     '''
 
     statis = stat(tel)
@@ -152,12 +156,18 @@ def show_model(model, tel, file_name, parameters):
 def compare_model(model, file_name, tel, log, parameters, parameters_2):
     '''
     Show two models (compare model)
-    :param model:
-    :param file_name:
-    :param tel:
-    :param log:
-    :param parameters:
-    :return:
+    :param model: process model type (ts, sbr, alpha, induct)
+    :param file_name: event log file name
+    :param tel: translucent event log
+    :param log: event log
+    :param parameters: parameters for process discovery
+    :returns:
+        output_file_path: process model derived from event log image's file path
+        output_file_path_2: process model derived from translucent event log image's file path
+        result: process evaluation result (tel)
+        result_2: process evaluation result (log)
+        max_thresh: maximum value for afreq, sfreq options
+        statis: statistics for event log (event source, model type, # of events, # of variants, # of traces)
     '''
     statis = stat(tel)
     output_file_path, result, max_thresh = show(model, tel, file_name, parameters)

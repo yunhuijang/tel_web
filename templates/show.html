@@ -18,10 +18,8 @@ function updateparam(name, val) {
 </script>
 <div>
     <div style="margin-bottom: 30px; padding: 5px;" > <!-- show statistics for model-->
-        {% set img_name = img_file_path[:-3].split('\\') %}
-        {% set name = img_name[2].split('_') %}
-        <mark>event source</mark>: {{name[0]}}
-        <mark>model type</mark>: {{name[1]}}
+        <mark>event source</mark>: {{option['file']}}
+        <mark>model type</mark>: {{option['model']}}
         {% for key, value in stat.items() %}
             <mark>{{key}}</mark> : {{value}}
         {% endfor %}
