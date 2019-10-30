@@ -1,5 +1,5 @@
 import time
-
+from pm4py.objects.log.util import xes as xes_util
 from pm4py.algo.discovery.alpha.data_structures import alpha_classic_abstraction
 from pm4py.algo.discovery.dfg.versions import native as dfg_inst
 from pm4py.algo.discovery.dfg.utils import dfg_utils
@@ -12,10 +12,14 @@ from pm4py import util as pm_util
 
 def trans_alpha(log, parameters=None):
     dfg = {k: v for k, v in dfg_inst.apply(log).items() if v > 0}
+    if parameters is None:
+        parameters = {}
+    if pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY not in parameters:
+            parameters[pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY] = xes_util.DEFAULT_NAME_KEY
     start_activities = endpoints.derive_start_activities_from_log(log, parameters[
-        pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY])
+            pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY])
     end_activities = endpoints.derive_end_activities_from_log(log, parameters[
-        pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY])
+            pm_util.constants.PARAMETER_CONSTANT_ACTIVITY_KEY])
 
     labels = set()
     for el in dfg:
@@ -34,7 +38,7 @@ def trans_alpha(log, parameters=None):
                             alpha_abstraction.causal_relation)))
     #this part added
     parallel_set = alpha_abstraction.parallel_relation
-    loop_set = set()
+    loop_cand_set = set()
     for rel in parallel_set.copy():
         not_loop_flag = False
         pre_act = rel[0]
@@ -51,7 +55,11 @@ def trans_alpha(log, parameters=None):
                         continue
             break
         if not not_loop_flag:
-            loop_set.add((pre_act, post_act))
+            loop_cand_set.add((pre_act, post_act))
+    loop_set = set()
+    for loop_cand in loop_cand_set:
+        if loop_cand[::-1] in loop_cand_set and loop_cand[0] != loop_cand[1]:
+            loop_set.add(loop_cand)
 
     #find loops based on enabling information
     #this part added
@@ -76,12 +84,6 @@ def trans_alpha(log, parameters=None):
         net.transitions.add(label_transition_dict[labels[i]])
 
     for pair in internal_places:
-        for loop in loop_set:
-            if loop[0] in pair[0]:
-                pair[1].add(loop[1])
-            if loop[0] in pair[1]:
-                pair[0].add(loop[1]) #add arcs in loop
-
         place = petri.petrinet.PetriNet.Place(str(pair))
         net.places.add(place)
 
@@ -92,5 +94,26 @@ def trans_alpha(log, parameters=None):
 
     src = classic.__add_source(net, alpha_abstraction.start_activities, label_transition_dict)
     sink = classic.__add_sink(net, alpha_abstraction.end_activities, label_transition_dict)
+
+    loop_tail_set = set()
+    for t in label_transition_dict.values(): #check if two-length-loop
+        if len(t.in_arcs) == 0 and len(t.out_arcs) ==0:
+            loop_tail_set.add(t)
+
+    for loop_tail in loop_tail_set:
+        if loop_set is not None:
+            loop_body = None
+            for loop in loop_set:
+                if loop[0] == loop_tail.name:
+                    loop_body = label_transition_dict[loop[1]]
+            if loop_body is not None:
+                for place in net.places:
+                    for in_arc in place.in_arcs:
+                        if in_arc.source == loop_body:
+                            petri.utils.add_arc_from_to(place, label_transition_dict[loop_tail.name], net)
+                            break
+                    for out_arc in place.out_arcs:
+                        if out_arc.target == loop_body:
+                            petri.utils.add_arc_from_to(label_transition_dict[loop_tail.name], place, net)
 
     return net, Marking({src: 1}), Marking({sink: 1})

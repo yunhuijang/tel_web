@@ -12,6 +12,11 @@ def transition_dict(auto):
 
     return dic
 
+def get_name(set_):
+    name_set = set()
+    for i in set_:
+        name_set.add(i.name)
+    return name_set
 
 def find_GER(auto, e):
     '''
@@ -30,7 +35,8 @@ def find_GER(auto, e):
     ger_set = set()
 
     for state in auto.states:
-        if e in str(state.name):
+        name_set = get_name(state.outgoing)
+        if e in name_set:
             ger_set.add(state)
 
     return ger_set
@@ -51,7 +57,14 @@ def generate_minimal_pre_region(auto, e):
     '''
     pre_region = set()
     explored = set()
-    ger = find_GER(auto, e)
+    if e == 'final':
+        for state in auto.states:
+            if len(state.outgoing) == 0:
+                final_state = state
+        ger = set()
+        ger.add(final_state)
+    else:
+        ger = find_GER(auto, e)
     expand_states(auto, ger, pre_region, explored)
     return pre_region
 
@@ -218,7 +231,7 @@ def sum_digit(num):
     return num % 10 + sum_digit(num/10)
 
 
-def    split_labels(auto, e):
+def split_labels(auto, e):
     '''
     split labels for event e
 
@@ -472,20 +485,25 @@ def petri_net_synthesis(auto):
 
     split = True
     newauto = auto
+    trans_name_set = get_name(newauto.transitions)
     while split: #label splitting
         split = False #flag (until splitting is not needed)
-        for e in newauto.transitions:
-            if not is_excitation_closure(auto, e.name):
+        for e in trans_name_set:
+            if not is_excitation_closure(auto, e):
                 newauto = split_labels(auto, e)
                 split = True
 
     # sol_cand = irredundant_place_cand(newauto)
     # sol = find_irredundant_cover(sol_cand)
 
-
     region_set = set()
-    for trans in newauto.transitions:
-        r = generate_minimal_pre_region(newauto, trans.name)
+    r = generate_minimal_pre_region(newauto, 'final')
+    if r is not None:
+        for reg in r:
+            region_set.add(frozenset(reg))
+
+    for trans in trans_name_set:
+        r = generate_minimal_pre_region(newauto, trans)
         if r is not None:
             for reg in r:
                 region_set.add(frozenset(reg))

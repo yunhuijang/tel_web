@@ -4,7 +4,7 @@ from tests.translucent_event_log_new.objects.tel.importer.xes import utils
 from pm4py.objects.petri import semantics
 from pm4py.visualization.heuristics_net import factory as hn_vis_factory
 
-def and_set(log, window = 1):
+def and_set(log, window = 2):
 
     and_dict = {}
 

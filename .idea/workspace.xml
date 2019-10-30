@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/multiset_error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tel_web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tel_web.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pm4py/algo/discovery/transition_system/versions/view_based.py" beforeDir="false" afterPath="$PROJECT_DIR$/pm4py/algo/discovery/transition_system/versions/view_based.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/show.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/heruistics_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/heruistics_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/automaton/transition_system.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/state_based_region.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/state_based_region.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/objects/tel/importer/xes/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/translucent_event_log_new/revise_alpha_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/translucent_event_log_new/revise_alpha_test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,19 +37,19 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\input_data" />
+      <recent name="C:\Users\uni5510\programming\tel_web\tel_web" />
+      <recent name="C:\Users\uni5510\programming\tel_web\tel_web\tests\translucent_event_log_new" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
+      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new\input_data\df_complete_logs\df_complete_alpha" />
       <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\uni5510\programming\tel_web\tel_web" />
-      <recent name="C:\Users\uni5510\programming\tel_web\tel_web\tests\translucent_event_log_new" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\static\images" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests\translucent_event_log_new" />
-      <recent name="C:\Users\yunhui\PycharmProjects\tel_web\tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -74,6 +65,27 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
+    <configuration name="alpha_revise" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tel_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/translucent_event_log_new/algo/discover_petrinet/alpha_revise.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="heruistics_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tel_web" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,6 +120,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="revise_alpha_test" type="PythonConfigurationType" factoryName="Python">
+      <module name="tel_web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/translucent_event_log_new" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/translucent_event_log_new/revise_alpha_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,41 +191,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tel_web" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\yunhui\PycharmProjects\tel_web\tests\multiset_error.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
+      <item itemvalue="Python.revise_alpha_test" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.test (1)" />
       <item itemvalue="Python.test (2)" />
       <item itemvalue="Python.heruistics_test" />
+      <item itemvalue="Python.alpha_revise" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.heruistics_test" />
         <item itemvalue="Python.test (2)" />
         <item itemvalue="Python.test (1)" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.alpha_revise" />
+        <item itemvalue="Python.heruistics_test" />
       </list>
     </recent_temporary>
   </component>
@@ -304,7 +317,8 @@
     <MESSAGE value="Revised some options (after test)" />
     <MESSAGE value="Made loading page" />
     <MESSAGE value="changed df-complete test code" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed df-complete test code" />
+    <MESSAGE value="revised heuristic algorithm&#10;- added dealing with start activities&#10;- added condition to k.subset check (length &gt;0)" />
+    <option name="LAST_COMMIT_MESSAGE" value="revised heuristic algorithm&#10;- added dealing with start activities&#10;- added condition to k.subset check (length &gt;0)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -330,16 +344,16 @@
           <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="134" />
+          <url>file://$PROJECT_DIR$/show.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="220" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="input[event_index-1]" language="Python" />
-        <watch expression="in_[act]" language="Python" />
+        <watch expression="place.name" language="Python" />
+        <watch expression="place.name[0]" language="Python" />
       </configuration>
     </watches-manager>
   </component>
