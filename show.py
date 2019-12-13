@@ -30,6 +30,10 @@ def evaluation(net, im, fm, log):
     #to calculate alignment based fitness
     #fitness = replay_factory.apply(log, net, im, fm, variant="alignments")
     # result['fitness'] = result['fitness']['perc_fit_traces']
+
+    #todo: alignment checking option (token ,align)
+    #todo: revise tables for token, f1score, 4avg
+
     try:
         fitness = replay_factory.apply(log, net, im, fm, variant="alignments")
         result['fitness'] = fitness['percFitTraces']

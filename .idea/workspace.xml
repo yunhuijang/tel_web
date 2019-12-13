@@ -1,53 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="code refactoring">
-      <change afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/experiment(ts,apn).xlsx" afterDir="false" />
+    <list default="true" id="7b3f9563-bf55-4b0f-a5b9-4c385bb334bb" name="Default Changelist" comment="Changed Experiments&#10;- add alignment fitness, f1score, 4average to experiment_ts_apn&#10;&#10;Changed label splitting&#10;- revised all error code of label splitting (same with ProM now)&#10;- 0 fitness: beacuse of initial marking (initial marking should be XOR)">
       <change afterPath="$PROJECT_DIR$/input_data/BPI Challenge 2017.xes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/input_data/BPIC15_1.xes.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/input_data/event_log-1266-small-orders-complete.xes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/input_data/looplog.xes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/input_data/reviewing_with_fewer_errors_and_more_data-complete.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/discover_automaton/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/discover_automaton/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/discover_petrinet/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/discover_petrinet/alpha_revise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/discover_petrinet/alpha_revise_2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/discover_petrinet/inductive_revise.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/algo/discover_petrinet/state_based_region.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/automaton/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/automaton/defaults.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/automaton/transition_system.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/tel/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/tel/importer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/tel/importer/xes/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/tel/importer/xes/iterparse_tel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/tel/importer/xes/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/tel/tel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/objects/tel/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/output_data/credit_application_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/output_data/receipt_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/output_data/roadtraffic50traces_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/output_data/running-example_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/output_data/simple_make_trip_tel.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/alpha_revise_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/df_completeness_alpha.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/df_completeness_other.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/experiment_dfg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/experiment_ts_apn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/export_test (make tel by alpha algorithm).py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/out.xes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/show_alpha_miner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translucent_event_log/tests/state_based_region_theory test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/~$experiment(ts,apn).xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_data/Sepsis_tel_sa.xes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/input_data/roadtraffic100traces_tel.xes" beforeDir="false" afterPath="$PROJECT_DIR$/translucent_event_log/output_data/roadtraffic100traces_tel.xes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/input_data/running_alpha_10000_tel.xes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/input_data/running_alpha_10000_tel_sa.xes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/input_data/running_alpha_1000_tel.xes" beforeDir="false" />
@@ -57,12 +18,6 @@
       <change beforePath="$PROJECT_DIR$/input_data/running_alpha_10_tel.xes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/input_data/running_alpha_10_tel_sa.xes" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/2running-example_ts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/Ellipsis-1s-200px.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/running-example_ts_0_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/running-example_ts_3_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/compare.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/compare.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/show.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -348,17 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1572448163067</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changed Experiments&#10;- add alignment fitness, f1score, 4average to experiment_ts_apn&#10;&#10;Changed label splitting&#10;- revised all error code of label splitting (same with ProM now)&#10;- 0 fitness: beacuse of initial marking (initial marking should be XOR)">
+      <created>1576253238528</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1576253238528</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
-  </component>
-  <component name="TodoView" selected-index="4">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
@@ -389,7 +342,8 @@
     <MESSAGE value="revised heuristic algorithm&#10;- added dealing with start activities&#10;- added condition to k.subset check (length &gt;0)" />
     <MESSAGE value="revised process discovery algorithms&#10;- normal state based region error revise&#10;- alpha error revise&#10;- alpha parameter dealing revise" />
     <MESSAGE value="code refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="code refactoring" />
+    <MESSAGE value="Changed Experiments&#10;- add alignment fitness, f1score, 4average to experiment_ts_apn&#10;&#10;Changed label splitting&#10;- revised all error code of label splitting (same with ProM now)&#10;- 0 fitness: beacuse of initial marking (initial marking should be XOR)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Experiments&#10;- add alignment fitness, f1score, 4average to experiment_ts_apn&#10;&#10;Changed label splitting&#10;- revised all error code of label splitting (same with ProM now)&#10;- 0 fitness: beacuse of initial marking (initial marking should be XOR)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -416,7 +370,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/translucent_event_log/algo/discover_petrinet/alpha_revise_2.py</url>
-          <line>69</line>
+          <line>68</line>
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -441,7 +395,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/show.py</url>
-          <line>39</line>
+          <line>43</line>
           <option name="timeStamp" value="370" />
         </line-breakpoint>
       </breakpoints>
