@@ -1,0 +1,1 @@
+from translucent_event_log.objects.automaton import transition_system

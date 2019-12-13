@@ -224,21 +224,10 @@ function getPar()
             {%if result is not none%}
              <table class = "table" width = 200px>
                 {% for key, value in result.items() %}
-                    {% if key == 'fitness' %}
-                        {% for keyy, valuee in result['fitness'].items() %}
-                            {% if keyy == "log_fitness" %}
-                            <tr>
-                                <th> {{ keyy }} </th>
-                                <td> {{ valuee|round(3) }} </td>
-                            </tr>
-                            {% endif %}
-                        {% endfor %}
-                    {% else %}
                      <tr>
                          <th> {{ key }} </th>
                         <td> {{ value|round(3) }} </td>
                      </tr>
-                    {% endif %}
                 {% endfor %}
                 {%endif%}
             </table>
@@ -247,21 +236,10 @@ function getPar()
             {%if result_2 is not none%}
             <table class="table" width = 200px>
                     {% for key, value in result_2.items() %}
-                        {% if key == 'fitness' %}
-                            {% for keyy, valuee in result_2['fitness'].items() %}
-                                {% if keyy == "log_fitness" %}
-                                <tr>
-                                    <th> {{ keyy }} </th>
-                                    <td> {{ valuee|round(3) }} </td>
-                                </tr>
-                                {% endif %}
-                            {% endfor %}
-                        {% else %}
                          <tr>
                              <th> {{ key }} </th>
                             <td> {{ value|round(3) }} </td>
                          </tr>
-                        {% endif %}
                     {% endfor %}
                     {%endif%}
             </table>

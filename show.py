@@ -14,7 +14,7 @@ from translucent_event_log.algo.discover_petrinet import state_based_region as s
 from translucent_event_log.algo.discover_petrinet import inductive_revise
 from translucent_event_log.objects.tel.tel import Event
 from translucent_event_log.algo.discover_petrinet.alpha_revise import trans_alpha
-
+from pm4py.evaluation.replay_fitness import factory as replay_factory
 
 def evaluation(net, im, fm, log):
     '''
@@ -25,10 +25,17 @@ def evaluation(net, im, fm, log):
     :param log: event log that made petri net
     :return: fitness, precision, generalization, simplicity, metricsAverage
     '''
+    #pn_vis_factory.view(gviz)
     result = evaluation_factory.apply(log, net, im, fm)
     #to calculate alignment based fitness
-    # fitness = replay_factory.apply(log, net, im, fm, variant="alignments")
-    # result['fitness'] = fitness
+    #fitness = replay_factory.apply(log, net, im, fm, variant="alignments")
+    # result['fitness'] = result['fitness']['perc_fit_traces']
+    try:
+        fitness = replay_factory.apply(log, net, im, fm, variant="alignments")
+        result['fitness'] = fitness['percFitTraces']
+    except TypeError:
+        result['fitness'] = result['fitness']['perc_fit_traces']
+        result['token'] = True
 
     return result
 

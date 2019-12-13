@@ -110,21 +110,10 @@ function updateparam(name, val) {
         <table class = "table  table-sm">
                 {%if result is not none%}
             {% for key, value in result.items() %}
-                {% if key == 'fitness' %}
-                    {% for keyy, valuee in result['fitness'].items() %}
-                        {% if keyy == "log_fitness" %}
-                        <tr>
-                            <th style="width: 50%"> {{ keyy }} </th>
-                            <td> {{ valuee|round(3) }} </td>
-                        </tr>
-                        {% endif %}
-                    {% endfor %}
-                {% else %}
                  <tr>
                      <th style="width: 50%"> {{ key }} </th>
                     <td> {{ value|round(3) }} </td>
                  </tr>
-                {% endif %}
             {% endfor %}
                 {%endif%}
         </table>
